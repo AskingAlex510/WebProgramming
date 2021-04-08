@@ -1,0 +1,36 @@
+#topnav ul, #botnav ul {
+    overflow: hidden;
+    background-color: rgb(173, 173, 173);
+}
+
+#topnav li {
+    display: inline;
+    float: right;
+    border-left: 1px solid white;
+}
+
+#botnav li {
+    display: inline;
+    float: right;
+}
+
+#topnav li:last-child {
+    border: none;
+}
+
+#topnav a, #botnav a {
+    display: block;
+    padding: 16px 18px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+}
+
+#topnav a:hover:not(.active) {
+    background-color: rgb(122, 122, 122);
+}
+
+#topnav .active {
+    background-color: rgb(0, 90, 150);
+}
