@@ -1,10 +1,12 @@
 #topnav ul, #botnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
     background-color: rgb(173, 173, 173);
 }
 
 #topnav li {
-    display: inline;
     float: right;
     border-left: 1px solid white;
 }
@@ -33,4 +35,8 @@
 
 #topnav .active {
     background-color: rgb(0, 90, 150);
+}
+
+@media screen and (max-width: 500px) {
+    #topnav li, #botnav li {float: none;}
 }
