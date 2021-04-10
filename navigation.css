@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 #topnav ul, #botnav ul {
     list-style-type: none;
     margin: 0;
@@ -9,6 +13,12 @@
 #topnav li {
     float: right;
     border-left: 1px solid white;
+}
+
+#botnav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 #botnav li {
