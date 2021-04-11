@@ -1,24 +1,25 @@
-body {
+body, html {
+    height: 100%;
     margin: 0;
+    background-image: url("image/prototype_background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #topnav ul, #botnav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: rgb(173, 173, 173);
+    white-space: nowrap;
+    overflow: auto;
+    background-color: rgb(109, 133, 150);
 }
 
 #topnav li {
     float: right;
     border-left: 1px solid white;
-}
-
-#botnav {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }
 
 #botnav li {
@@ -47,6 +48,6 @@ body {
     background-color: rgb(0, 90, 150);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
     #topnav li, #botnav li {float: none;}
 }
