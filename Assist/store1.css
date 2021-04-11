@@ -1,0 +1,384 @@
+a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+header{
+  background-color: rgb(231, 230, 230);
+  display: flex;
+}
+.logo-store{
+  display: inline-block;
+    width: 15%;
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    min-width: 200px;
+    min-height: 120px;
+}
+
+.logo-store > a > img{
+  border-radius: 4%;
+  width : 200px; 
+  height : 120px;
+}
+
+.search-bar{
+  margin: 1%;
+  width: 72%;
+  height: 70px;
+}
+
+.search-bar input{
+  margin-left: 5%;
+  margin-right: 10%;
+  margin-top: 1%;
+  padding: 10px;
+  width: 90%;
+  min-width: 20%;
+  height: 30%;
+  border: 0px;
+  font-size: 30px;
+}
+  
+/* Nav Setting */
+.nav-for-store {
+  clear: both;
+  display: block;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  margin-bottom: 1%;
+  background-color: rgb(231, 230, 230);
+  box-shadow: 0px 0px 2px #000000;  
+}
+
+.nav-button {
+  background-color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  padding: 20px;
+  border:0px;
+  margin-left: 1%;
+  margin-right: 1%;
+  width: 7%;
+  min-width: 130px;
+  height: 15px;
+  border-radius: 4%;
+  cursor: pointer;
+  text-shadow: 0px 0px 1px #6b6363;
+  box-shadow: 0px 0px 2px #000000;
+  }
+
+.nav-button:hover{
+  background-color: black;
+}
+
+.nav-button > a{
+  color: gray;
+}
+
+.dropdown-menu > .nav-button {
+  color: gray;
+  
+}
+
+.dropdown-menu > .nav-button:hover{
+  background-color: black;
+}
+
+/* Seting for Dropdown Element */  
+.dropdown-menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1%;
+    margin-right: 1%;
+    
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 280px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-weight: bold;
+    top: 50px;
+    text-shadow: 0px 0px 1px #6b6363;
+    box-shadow: 0px 0px 2px #000000;
+  }
+
+  .category-time {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 280px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 0;
+    font-weight: bold;
+    top: 93.5px;
+    text-shadow: 0px 0px 1px #6b6363;
+    box-shadow: 0px 0px 2px #000000;
+  }
+
+.dropdown-content a {
+    color: gray;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+  }
+
+  .category-time a{
+    color: gray;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.dropdown-content a:hover {
+    background-color: black;
+
+  }
+
+  .category-time a:hover{
+    background-color: black;
+  }
+
+.dropdown-menu:hover .dropdown-content {
+    display: block;
+  }
+
+.dropdown-menu:hover .category-time{
+  display: block;
+}
+
+.dropdown-menu:hover {
+    background-color: skyblue;
+  }
+
+
+/* Dropdown Element for category */  
+
+
+.category-product {
+  display: none;
+  position: absolute;
+  left: 85%;
+  background-color: white;
+  width: 100px;
+  min-width: 280px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-weight: bold;
+  top: 20px;
+  text-shadow: 0px 0px 1px #6b6363;
+  box-shadow: 0px 0px 2px #000000;
+}
+
+.category-product a {
+  color: gray;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+
+}
+
+.category-product a:hover {
+  background-color: black;
+
+}
+
+.dropdown-content:hover > .category-product {
+  display: block;
+}
+
+/* Dropdown Element for Time */  
+.category-product-time {
+  display: none;
+  position: absolute;
+  left: 85%;
+  background-color: white;
+  width: 100px;
+  min-width: 280px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-weight: bold;
+  top: 20px;
+  text-shadow: 0px 0px 1px #6b6363;
+  box-shadow: 0px 0px 2px #000000;
+}
+
+.category-product-time a {
+  color: gray;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+
+}
+
+.category-product-time a:hover {
+  background-color: black;
+
+}
+
+.category-time:hover > .category-product-time {
+  display: block;
+}
+
+/* Body */
+body{
+  clear: both;
+  background-color: rgb(231, 230, 230);
+}
+
+  /* Aside left and right */
+  .left{
+    float: left;
+    width: 10%;
+    height: 10px;
+    margin: 0px;
+    visibility: hidden;
+  }
+  
+  .right{
+    float: right;
+    width: 10%;
+    height: 10px;
+    margin: 0px;
+    visibility: hidden;
+  }
+  
+  /* Main body */
+.main{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0px;
+
+}
+.main-layout{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.new-product{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+
+
+.image-product{
+  width: 13vw;
+  height: 30vh;
+  min-width:100px;
+}
+
+.product-store{
+  width: 40%;
+  border:1px solid;
+  border-color: gray;
+  background-color: white;
+  padding: 1%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  min-width: 100px;
+  
+}
+
+.name-product{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1vw;
+  min-width: 100px;
+  color: gray;
+}
+
+.price-product{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1vw;
+  min-width: 100px;
+}
+
+.product > header {
+  display: block;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:150%;
+  font-weight: bold;
+  color: gray;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  text-decoration-line: underline;
+  background-color: white;
+  min-width: 270px;
+}
+
+
+/* Footer */
+.bot-nav{
+  clear: both;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgb(231, 230, 230);
+  border: 3px solid;
+  border-radius: 4px;
+  border-color: white;
+  width: 100%;
+  
+
+}
+.bot-nav > section{
+  padding: 1%;
+  margin: 0.5%;
+  border-radius: 4px;
+  width: 20%;
+  min-width: 100px;
+  align-content: center;
+  text-align: center;
+  background-color: white;
+  
+}
+
+.bot-nav > section > a{
+  color: gray;
+  font-weight: bold;
+}
+
+.bot-nav > section:hover{
+  background-color: black;
+}
+
+/* Layout size */
+
+@media only screen and (max-width: 760px) {
+  .logo-store{
+    display: none;
+  }
+  .main-layout{
+    display:block;
+    width: 100%;
+  }
+  footer{
+    display: none;
+  }
+}
