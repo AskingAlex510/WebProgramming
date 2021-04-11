@@ -41,7 +41,7 @@ body, html {
 }
 
 #topnav a:hover:not(.active) {
-    background-color: rgb(122, 122, 122);
+    background-color: rgb(80, 122, 150);
 }
 
 #topnav .active {
