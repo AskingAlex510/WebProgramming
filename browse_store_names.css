@@ -1,0 +1,52 @@
+main header {
+    text-align: center;
+    font-size: xx-large;
+    color: rgb(0, 90, 150);
+}
+
+.store1 {
+    width: 20%;
+    background-color: #f2f2f2;
+    padding: 1%;
+    margin:2%;
+    align-items: center;
+    text-align: center;
+    min-width: 150px;
+}
+
+.storelink {
+    text-decoration: none;
+}
+
+.imgstore {
+    width: 13vw;
+    min-width:100px;
+}
+
+.storename {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14;
+}
+
+main > div > a p:active {
+    color:purple;
+}
+
+main > div > a p:hover {
+    color: red;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    main{
+        margin: 27%;
+        padding: 1px 16px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .store1 {
+        position: relative;
+        font-size: small;
+        left:20px;
+        top: 20px;
+    }
+}
