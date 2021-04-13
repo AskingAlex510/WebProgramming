@@ -3,6 +3,10 @@
     text-align: center;
 }
 
+#body {
+    height: 100%;
+}
+
 #faq-section {
     padding-left: 100px;
 }
@@ -37,4 +41,21 @@ input + label + .content {
 
 input:checked + label + .content {
     display: block;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #body {
+        margin-left: 27%;
+        padding: 1px 16px;
+        height: 1000px
+    }
+    #faq-section {
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #faq-section {
+        padding-left: 0px;
+    }
 }
