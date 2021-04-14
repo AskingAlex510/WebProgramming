@@ -378,6 +378,12 @@ body{
     display:block;
     width: 100%;
   }
+  .product-store{
+    width: 100%;
+  }
+  .name-product {
+    width: 1000px;
+  }
   footer{
     display: none;
   }
