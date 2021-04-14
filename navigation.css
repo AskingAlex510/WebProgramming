@@ -9,7 +9,7 @@ body, html {
 }
 
 main {
-    height: auto;
+    min-height: 100%;
 }
 
 #topnav ul, #botnav ul {
@@ -90,7 +90,6 @@ main {
     main {
         margin-left: 27%;
         padding: 1px 16px;
-        height: 1000px
     }
     #topnav ul {
         width: 27%;

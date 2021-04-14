@@ -22,12 +22,7 @@ main label {
     font-weight: bold;
 }
 
-label[for="Pmail"], label[for="Pphone"], label[for="mon"], label[for="tue"], label[for="wed"], label[for="thu"], label[for="fri"], label[for="sat"], label[for="sun"] {
-    font-size: medium;
-    font-weight: normal;
-}
-
-input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+input:not(input[type="file"]), select {
     width: 40%;
     padding: 12px;
     border: 1px solid rgb(170, 170, 170);
@@ -37,7 +32,7 @@ input[type="text"], input[type="email"], input[type="tel"], select, textarea {
     margin-bottom: 12px;
     resize: vertical;
 }
-  
+
 button[type="submit"], button[type="reset"] {
     background-color: rgb(109, 133, 150);
     color: white;
