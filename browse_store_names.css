@@ -4,6 +4,11 @@ main h2 {
     color: rgb(0, 90, 150);
 }
 
+footer{
+    position:relative;
+    top: 100%;
+}
+
 .store1 {
     width: 20%;
     background-color: #f2f2f2;
