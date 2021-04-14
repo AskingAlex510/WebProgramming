@@ -387,4 +387,10 @@ body{
   footer{
     display: none;
   }
+  .dropdown-content{
+    right: 55%;
+  }
+  .category-time{
+    right: 55%;
+  }
 }
