@@ -1,0 +1,40 @@
+.about-us{
+    display: flex;
+    justify-content: space-around;
+}
+.deco-infor{
+    display: flex;
+    flex-direction: row;
+}
+
+.set-row{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1%;
+    overflow: hidden;
+}
+
+.name-infor{
+    visibility: hidden;
+}
+
+.set-row:hover .name-infor{
+    visibility: inherit;
+
+}
+
+.set-row > img{
+    width: 100%;
+    height: 400px;
+}
+
+@media screen and (max-width: 767px){
+    .deco-infor{
+        flex-direction: column;
+    }
+
+    .set-row{
+        margin: 1%;
+        border: 1px solid gray;
+    }
+}
