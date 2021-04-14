@@ -3,10 +3,6 @@
     text-align: center;
 }
 
-#body {
-    height: 100%;
-}
-
 #faq-section {
     padding-left: 100px;
 }
@@ -44,11 +40,6 @@ input:checked + label + .content {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    #body {
-        margin-left: 27%;
-        padding: 1px 16px;
-        height: 1000px
-    }
     #faq-section {
         padding-left: 0px;
     }

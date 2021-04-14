@@ -3,58 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="navigation.css" type="text/css"/>
 </head>
+
 <body>
-<header>MALL HEADER</header>
-<div id="topnav">
+<header>
+    <div id="topnav">
     <nav>
         <ul>
-            <li><a class="active" href="contacts.html">CONTACTS</a></li>
+            <li><a href="contacts.html">CONTACTS</a></li>
             <li><a href="faqs.html">FAQS</a></li>
-            <li><a href="browse_name.html">BROWSE</a></li>
+            <li class="dropdown">
+                <a class="dropbutton">BROWSE</a>
+                <div class="drop-content">
+                    <a href="browse_name.html">Browse Stores by Names</a>
+                    <a href="browse_cat.html">Browse Stores by Category </a>
+                </div>
+            </li>
             <li><a href="account.html">MY ACCOUNT</a></li>
             <li><a href="fees.html">FEES</a></li>
             <li><a href="aboutus.html">ABOUT US</a></li>
             <li><a href="home.html">HOME</a></li>
         </ul>
     </nav>
-</div>
+    </div>
+</header>
 
-<section><header><h1>Account Registration</h1></header>
-    <p>Create your account here!</p>
-    <form id="register">
-        <label for="mail">E-Mail Address:</label><br>
-        <input type="email" id="mail" name="mail"><br>
-        <label for="phone">Phone Number:</label><br>
-        <input type="tel" id="phone" name="phone"><br>
-        <label for="pswd">Password:</label><br>
-        <input type="password" id="pswd" name="pswd"><br>
-        <label for="pswd-con">Re-type Password:</label><br>
-        <input type="password" id="pswd-con" name="pswd-con"><br>
-        <label for="pic">Upload a Profile Picture:</label><br>
-        <input type="file" id="pic" name="pic"><br>
-        <label for="name_first">First Name:</label><br>
-        <input type="text" id="name_first" name="name"><br>
-        <label for="name_last">Last Name Name:</label><br>
-        <input type="text" id="name_last" name="name"><br>
-        <label for="address">Address:</label><br>
-        <input type="text" id="address" name="address"><br>
-        <label for="city">City:</label><br>
-        <input type="text" id="city" name="city"><br>
-        <label for="zip">Zip Code:</label><br>
-        <input type="number" id="zip" name="zip"><br>
+<main>
+    <section><header><h1>Account Registration</h1></header>
+        <p>Create your account here!</p>
+        <form id="register">
+            <label for="mail">E-Mail Address:</label><br>
+            <input type="email" id="mail" name="mail"><br>
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone"><br>
+            <label for="pswd">Password:</label><br>
+            <input type="password" id="pswd" name="pswd"><br>
+            <label for="pswd-con">Re-type Password:</label><br>
+            <input type="password" id="pswd-con" name="pswd-con"><br>
+            <label for="pic">Upload a Profile Picture:</label><br>
+            <input type="file" id="pic" name="pic"><br>
+            <label for="name_first">First Name:</label><br>
+            <input type="text" id="name_first" name="name"><br>
+            <label for="name_last">Last Name Name:</label><br>
+            <input type="text" id="name_last" name="name"><br>
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address"><br>
+            <label for="city">City:</label><br>
+            <input type="text" id="city" name="city"><br>
+            <label for="zip">Zip Code:</label><br>
+            <input type="number" id="zip" name="zip"><br>
 
-        <label for="country">Country:</label><br>
-        <select name="country" id="country">
-            <option value="3">Business Interest</option>
-            <option value="2">Account Issues</option>
-            <option value="1">Comments & Suggestions</option>
-            <option value="0">Other</option>
-        </select><br>
-    </form>
-    <button type="reset" form="register" value="reset">Clear</button>
-    <button type="Submit" form="register" value="submit">Submit</button>
-</section>
+            <label for="country">Country:</label><br>
+            <select name="country" id="country">
+                <option value="3">Business Interest</option>
+                <option value="2">Account Issues</option>
+                <option value="1">Comments & Suggestions</option>
+                <option value="0">Other</option>
+            </select><br>
+        </form>
+        <button type="reset" form="register" value="reset">Clear</button>
+        <button type="Submit" form="register" value="submit">Submit</button>
+    </section>
+</main>
 
 <footer>MALL FOOTER</footer>
 <div id="botnav">

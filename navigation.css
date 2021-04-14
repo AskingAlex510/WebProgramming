@@ -8,6 +8,10 @@ body, html {
     background-attachment: fixed;
 }
 
+main {
+    height: 100%;
+}
+
 #topnav ul, #botnav ul {
     list-style-type: none;
     margin: 0;
@@ -83,6 +87,11 @@ body, html {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    main {
+        margin-left: 27%;
+        padding: 1px 16px;
+        height: 1000px
+    }
     #topnav ul {
         width: 27%;
         position: fixed;
