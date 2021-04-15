@@ -4,24 +4,11 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="navigation.css" type="text/css"/>
-    <link rel="stylesheet" href="body.css" type="text/css">
+    <link rel="stylesheet" href="browse_cat.css" type="text/css">
 </head>
 
 <body>
-<style>
-    footer{
-        position: relative;
-        top: 100%;
-    }
-    h1 {
-        color: rgb(0, 90, 150);
-        text-align: center;
-    }
-    .selector {
-        position: relative;
-        left: 20%;
-    }
-</style>
+
 <header>
     <div id="topnav">
     <nav>
@@ -45,9 +32,11 @@
 </header>
 
 <main>
-    <h1>Search based on category</h1>
+    <header>
+        <h1>SEARCH BASED ON CATEGORY</h1>
+    </header>
     <div class=selector>
-        <label for="category">Choose a category</label>
+        <label for="category">Choose a Category:</label>
         <select name="category" id= category>
             <option value="Laptop">Laptop Gaming</option>
             <option value="PC gaming">PC Gaming</option>
@@ -55,7 +44,7 @@
             <option value="keyboard">Keyboard</option>
             <option value="console">Console</option>
         </select>
-    <button id="cate-button" type="button" ><a href="browse_stores_names.html">Search</a></button>
+    <button type="button"><a href="browse_stores_names.html">Search</a></button>
     </div>
 </main>
 
