@@ -1,0 +1,140 @@
+main{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.image-infor{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 1px solid gray;
+}
+
+.manage-image{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-image{
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.show-more-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+.show-more-image > img{
+    width: 20%;
+    border: 1px solid gray;
+}
+
+.buy-add{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.buy-add > button{
+    width: 160px;
+    margin-right: 20px;
+    height: 50px;
+    background-color: red;
+    color: yellow;
+}
+
+.buy-add > button > a{
+    text-decoration: none;
+    color: white;
+}
+
+.technical-parameters{
+    display: flex;
+    flex-direction: column;
+}
+
+.technical-parameters > table{
+    justify-content: space-around;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+table{
+    border: 1px solid gray;
+}
+
+th{
+    border: 1px solid gray;
+    text-align: left;
+    width: 200px;
+}
+
+td{
+    border: 1px solid gray;
+    width: 200px;
+}
+
+.recommended-product{
+    display: flex;
+    flex-direction: column;
+}
+
+.image-tags{
+    display: flex;
+    flex-direction: row;
+}
+
+.set-collum{
+    border: 1px solid gray;
+    margin-bottom: 2%;
+}
+
+.set-collum:hover{
+    border: none;
+}
+
+.set-collum > a{
+    text-decoration: none;
+}
+
+.set-collum > a >img{
+    width: 100%;
+}
+
+.set-collum > a > h5{
+    text-align: center;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .image-infor{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .image-infor{
+        flex-direction: column;
+    }
+
+    .show-more-image{
+        flex-direction: column;
+    }
+
+    .show-more-image > img{
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .image-tags{
+        flex-direction: column;
+    }
+}
