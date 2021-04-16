@@ -33,3 +33,27 @@ strong {
     color:rgb(0, 90, 150);
 }
 
+@media only screen and(min-width:1024px) {
+    .topnav {
+        position: fixed;
+        width:100%;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    #selling_price th:nth-child(2n+1) {
+        width: 30%;
+    }
+    #selling_price th:nth-child(2n) {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    #selling_price th:nth-child(2n+1) {
+        width: 30%;
+    }
+    #selling_price th:nth-child(2n) {
+        width: 40%;
+    }
+}
