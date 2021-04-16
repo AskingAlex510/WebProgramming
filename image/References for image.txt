@@ -1,0 +1,26 @@
+1. I take Logo for newstore1.html on the web: https://tatthanh.com.vn/logo-may-tinh
+2. I found some way to make the dropdown Menu on the web: https://www.w3schools.com/howto/howto_css_dropdown.asp
+3. Reference for product:
+	cat1-product1:https://gearvn.com/products/laptop-gaming-acer-aspire-7-a715-42g-r4st
+	cat1-product2:https://gearvn.com/products/laptop-gaming-acer-nitro-5-an515-44-r9jm
+	cat1-product3:https://gearvn.com/products/laptop-asus-tuf-gaming-f15-fx506lh-hn002t
+	cat1-product4:https://gearvn.com/products/laptop-gaming-acer-nitro-5-an515-55-5923
+	cat1-product5:https://gearvn.com/products/laptop-gaming-msi-gf63-thin-10sc-014vn
+	cat1-product6:https://gearvn.com/products/ban-phim-co-gaming-dareu-ek87-black-multi-led
+	cat2-product1:https://gearvn.com/products/gvn-titan-10-m
+	cat2-product2:https://gearvn.com/products/gvn-mystic-m
+	cat2-product3:https://gearvn.com/products/gvn-viper-1660
+	cat2-product4:https://gearvn.com/products/gvn-yuumi-2060
+	cat3-product1:https://gearvn.com/products/man-hinh-acer-ed272-a-27-ips-75hz
+	cat3-product2:https://gearvn.com/products/man-hinh-viewsonic-vx2458-p-24-tn-144hz-freesync
+	cat3-product3:https://gearvn.com/products/lcd-lg-24mp59g-ips-75hz
+	cat3-product4:https://gearvn.com/products/man-hinh-asus-va24he-24-ips-75hz-vien-mong
+	cat4-product1:https://gearvn.com/products/ban-phim-gaming-dareu-lk145-usb
+	cat4-product2:https://gearvn.com/products/ban-phim-fuhlen-g87l
+	cat4-product3:https://gearvn.com/products/ban-phim-rapoo-v500-alloy
+	cat4-product4:https://gearvn.com/products/ban-phim-co-gaming-dareu-ek87-black-multi-led
+	cat5-product1:https://gearvn.com/products/tay-cam-ps5-dualsense
+	cat5-product2:https://gearvn.com/products/sony-playstation-classic
+	cat5-product3:https://gearvn.com/products/may-choi-game-sony-playstation-4-pro-1tb-om-2
+	cat5-product4:https://gearvn.com/products/may-choi-game-sony-playstion-5
+
