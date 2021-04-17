@@ -1,9 +1,19 @@
-.item h4 {
+.ordered-items, .buttons {
+    text-align: center;
+}
+
+.item img{
+    width: 100%;
+    height: 700px;
+    object-fit: contain;
+}
+
+.item h3 {
     color: rgb(0, 90, 150)
 }
 
 .buttons button {
-    margin: 2%;
+    margin: 3%;
     display: inline-block;
     background-color: rgb(109, 133, 150);
     padding: 12px 25px;
@@ -19,42 +29,4 @@
 
 .buttons button:hover {
     background-color: rgb(80, 122, 150);
-}
-
-.item img{
-    width: 20%;
-    height: 10rem;
-    object-fit: contain;
-    float: left;
-}
-
-.item img{
-    clear:left;
-}
-
-.buttons {
-    position: relative;
-    left: 42.5%;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    main {
-        margin-left: 27%;
-    }
-    .item img {
-        height: 12rem;
-    }
-    .ordered-items, .buttons {
-        text-align: center;
-    }
-
-}
-
-@media only screen and (max-width: 767px) {
-    .ordered-items {
-        text-align: center;
-    }
-    .buttons {
-        text-align: center;
-    }
 }
