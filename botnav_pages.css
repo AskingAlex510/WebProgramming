@@ -1,0 +1,23 @@
+header h1 {
+    color: rgb(0, 90, 150);
+    text-align: center;
+}
+
+main p {
+    padding: 0px 100px;
+    font-size: large;
+    line-height: 180%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    main p {
+        padding: 0%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    main p {
+        padding: 0%;
+        padding-left: 20px;
+    }
+}

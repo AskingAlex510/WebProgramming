@@ -6,17 +6,4 @@
 header > .logo-home > a > img{
     width: 40%;
     height: 200px;
-    object-fit: contain;
-}
-
-@media only screen and (min-width:768px) and (max-width:1023px) {
-    .logo-home {
-        display: none;
-    }
-}
-
-@media only screen and (max-width:767px) {
-    .logo-home {
-        display: none;
-    }
 }
