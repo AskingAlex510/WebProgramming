@@ -12,15 +12,21 @@
 </head>
 <body>
 <div class="logo-home">
-    <a href="./index.html" style="height: 200px><img src="./image/mall-logo.jpg" alt="shopping cart creative"></a>
+    <a href="./index.html" style="height: 200px"><img src="./image/mall-logo.jpg" alt="shopping cart creative"></a>
 </div>
 <div id="topnav">
     <nav>
         <ul>
             <li><a href="order.html">ORDERS</a></li>
-            <li><a class="active" href="contacts.html">CONTACTS</a></li>
+            <li><a href="contacts.html">CONTACTS</a></li>
             <li><a href="faqs.html">FAQS</a></li>
-            <li><a href="browse_name.html">BROWSE</a></li>
+            <li class="dropdown">
+                <a class="dropbutton">BROWSE</a>
+                <div class="drop-content">
+                    <a href="browse_name.html">Browse Stores by Names</a>
+                    <a href="browse_cat.html">Browse Stores by Category </a>
+                </div>
+            </li>
             <li><a href="login.html">MY ACCOUNT</a></li>
             <li><a href="fees.html">FEES</a></li>
             <li><a href="aboutus.html">ABOUT US</a></li>
@@ -29,8 +35,12 @@
     </nav>
 </div>
 
-<section><header><h1>Account Registration</h1></header>
+<main>
+    <header>
+        <h1>ACCOUNT REGISTRATION</h1>
+    </header>
     <p>Create your account here!</p>
+    <section>
     <form id="register" >
         <label for="mail">E-Mail Address:</label><br>
         <input type="email" id="mail" name="mail"><br>
@@ -64,6 +74,7 @@
     <button type="reset" form="register" value="reset">Clear</button>
     <button type="Submit" form="register" value="submit">Submit</button>
 </section>
+</main>
 
 <div id="botnav">
     <nav>
