@@ -5,11 +5,11 @@ header h1 {
 
 main p {
     text-align: center;
-    font-size: large
+    font-size: large;
 }
 
 main section {
-    padding-left: 200px;
+    padding-left: 100px;
     padding-bottom: 20px;
 }
 
