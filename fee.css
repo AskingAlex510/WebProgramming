@@ -9,16 +9,21 @@ main > header {
 
 table {
     width: 70%;
+    border: 1px solid grey;
 }
 /*Original CSS codes sourced and adapted for educational purposes: 
 https://www.w3schools.com/Css/css_table_size.asp  */
 
 th {
     height: 70px;
+    border: 1px solid grey;
 }
 /*Original CSS codes sourced and adapted for educational purposes: 
 https://www.w3schools.com/Css/css_table_size.asp  */
 
+td{
+    border: 1px solid grey;
+}
 section > div {
     position: relative;
     left: 15%;

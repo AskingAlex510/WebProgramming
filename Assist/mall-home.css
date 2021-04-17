@@ -1,0 +1,45 @@
+.logo-home > a{
+    display: flex;
+    justify-content: center;
+}
+
+header > .logo-home > a > img{
+    width: 40%;
+    height: 200px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main > section{
+    display: block;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+
+}
+
+main > section > header{
+    font-size: 20px;
+}
+
+main > div{
+    display: block;
+    align-items: center;
+    margin: 1% 10%;
+}
+
+
+main > div > a > img{
+    border: 1px solid grey;
+    margin: 1% 2.5%;
+    padding: 1px;
+}
+
+main > div > a:hover > img{
+    border: none;
+}
