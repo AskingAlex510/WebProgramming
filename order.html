@@ -5,84 +5,80 @@
     <title>Shopping cart</title>
     <link rel="stylesheet" href="navigation.css" type="text/css"/>
     <link rel="stylesheet" href="icon.css" type="text/css"/>
-    <link rel="stylesheet" href="order.css" type="text/css">
 </head>
 
 <body>
 
-
-<header>
-    <div class="logo-home">
-        <a href="./home.html"><img src="./image/mall-logo.jpg" alt="shopping cart creative"></a>
-    </div>
-    <div id="topnav">
-    <nav>
-        <ul>
-            <li><a href="order.html">ORDERS</a></li>
-            <li><a href="contacts.html">CONTACTS</a></li>
-            <li><a href="faqs.html">FAQS</a></li>
-            <li class="dropdown">
-                <a class="dropbutton">BROWSE</a>
-                <div class="drop-content">
-                    <a href="browse_name.html">Browse Stores by Names</a>
-                    <a href="browse_cat.html" class="active">Browse Stores by Category </a>
-                </div>
-            </li>
-            <li><a href="account.html">MY ACCOUNT</a></li>
-            <li><a href="fees.html">FEES</a></li>
-            <li><a href="aboutus.html">ABOUT US</a></li>
-            <li><a href="index.html">HOME</a></li>
-        </ul>
-    </nav>
-    </div>
-</header>
-
-<main>
-<!--Add the items picked-->
-<div class="ordered-items">
-    <div class="item">
-        <a><img class="product" src="image/store-product/cat1-product1.png" alt="Acer Aspire 7"></a>
-        <h3>Laptop gaming Acer Aspire 7 A715 42G R4ST</h3>
-        <h3>Price: </h3><p>18,490,000 VND</p>
-        <h3>Quantity:</h3><input value= "1" />
-    </div>
-    <div class="item">
-        <a><img class="product" src="image/store-product/cat5-product1.jpg" alt="PS5 DualSence"></a>
-        <h3>PS5 DualSence Controller</h3>
-        <h3>Price: </h3><p>1,990,000 VND</p>
-        <h3>Quantity:</h3><input value= "1" />
-    </div>
-    <div class="item">
-        <a><img class="product" src="image/store-product/cat4-product4.jpg" alt="Gaming DAREU EK87 - Black (Multi-LED)"></a>
-        <h3>Gaming DAREU EK87 - Black (Multi-LED)</h3>
-        <h3>Price: </h3><p>499,999 VND</p>
-        <h3>Quantity:</h3><input value="1" />
-    </div>
-</div>
-<!-- Original HTML codes sourced and adapted for educational purposes: 
-    https://iframedev.blogspot.com/2020/11/responsive-shopping-cart-in-html-and-css.html -->
-
-<!--Add the buttons-->
-<div class="buttons">
-    <div id="Continue">
-        <button><a href="product.html">Continue shopping</a></button>
-    </div>
-    <div id="Order">
-        <button><a href="Thankyou.html">Order</a></button>
-    </div>
-</div>
-</main>
-
-<footer>
-    <div id="botnav">
+    <header>
+        <div class="logo-home">
+            <a href="./index.html"><img src="./image/mall-logo.jpg" alt="shopping cart creative"></a>
+        </div>
+        <div id="topnav">
         <nav>
             <ul>
-                <li><a href="privacy.html">Privacy Policy</a></li>
-                <li><a href="tos.html">Terms of Service</a></li>
-                <li><a href="copyright.html">Copyright</a></li>
+                <li><a href="order.html">ORDERS</a></li>
+                <li><a href="contacts.html">CONTACTS</a></li>
+                <li><a href="faqs.html">FAQS</a></li>
+                <li class="dropdown">
+                    <a class="dropbutton">BROWSE</a>
+                    <div class="drop-content">
+                        <a href="browse_name.html">Browse Stores by Names</a>
+                        <a href="browse_cat.html" class="active">Browse Stores by Category </a>
+                    </div>
+                </li>
+                <li><a href="account.html">MY ACCOUNT</a></li>
+                <li><a href="fees.html">FEES</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="index.html">HOME</a></li>
             </ul>
         </nav>
+        </div>
+    </header>
+
+    <!--Add the items picked-->
+    <div class="ordered-items">
+        <div class="item">
+            <a><img class="product" src="#" alt="Acer Aspire 7"></a>
+            <h4>Laptop gaming Acer Aspire 7 A715 42G R4ST</h4>
+            <h4>Price: </h4><p>18,490,000 VND</p>
+            <h4>Quantity:</h4><input value= "1" />
+        </div>
+        <div class="item">
+            <a><img class="product" src="#" alt="PS5 DualSence"></a>
+            <h4>PS5 DualSence Controller</h4>
+            <h4>Price: </h4><p>1,990,000 VND</p>
+            <h4>Quantity:</h4><input value= "1" />
+        </div>
+        <div class="item">
+            <a><img class="product" src="#" alt="Gaming DAREU EK87 - Black (Multi-LED)"></a>
+            <h4>Gaming DAREU EK87 - Black (Multi-LED)</h4>
+            <h4>Price: </h4><p>499,999 VND</p>
+            <h4>Quantity:</h4><input value="1" />
+        </div>
     </div>
-</footer>
+    <!-- Original HTML codes sourced and adapted for educational purposes:
+        https://iframedev.blogspot.com/2020/11/responsive-shopping-cart-in-html-and-css.html -->
+
+    <!--Add the buttons-->
+    <div class="buttons">
+        <div id="Continue">
+            <button><a href="product.html">Continue shopping</a></button>
+        </div>
+        <div id="Order">
+            <button><a href="Thankyou.html">Order</a></button>
+        </div>
+    </div>
+
+    <footer>
+        <div id="botnav">
+            <nav>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="tos.html">Terms of Service</a></li>
+                    <li><a href="copyright.html">Copyright</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
 </body>
 </html>
