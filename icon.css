@@ -1,0 +1,9 @@
+.logo-home > a{
+    display: flex;
+    justify-content: center;
+}
+
+header > .logo-home > a > img{
+    width: 40%;
+    height: 200px;
+}
