@@ -30,12 +30,12 @@ td{
 }
 section > div {
     position: relative;
-    left: 15%;
+    padding-left: 15%;
 }
 
 .content {
     position: relative;
-    left: 15%; 
+    padding-left: 15%; 
 }
 
 strong {
