@@ -20,6 +20,13 @@ header h1 {
 
 .name-infor{
     visibility: hidden;
+    text-align: center;
+}
+
+.name-infor ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .set-row:hover .name-infor{
