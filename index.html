@@ -6,8 +6,17 @@
     <link rel="stylesheet" href="navigation.css" type="text/css"/>
     <link rel="stylesheet" href="./Assist/mall-home.css">
     <link rel="stylesheet" href="icon.css" type="text/css">
+    <style>
+        #consentPopup {
+            width: 100%;
+            padding: 50px;
+            text-align: center;
+            background-color: #f2f2f2;
+            margin-top: 20px;
+        }
+    </style>
 </head>
-<body>
+<body  onpageshow="popup()">
 <header>
     <div class="logo-home">
         <a href="./index.html"><img src="./image/mall-logo.jpg" alt="shopping cart creative"></a>
@@ -92,5 +101,24 @@
         </nav>
     </div>
 </footer>
+<div id="consentPopup" class="hidden">
+    <p>This site uses cookies to improve the user experience. By clicking
+    here you accept cookies placed by our site.</p> <a id="accept" href="#">Learn More</a>
+    <button onclick="consent()">I Consent</button>
+</div>
 </body>
 </html>
+<script>
+    function popup() {
+        if (sessionStorage.getItem("consent") === null){
+           // var x = document.getElementById("consentPopup")
+            document.getElementById("consentPopup").style.display = 'block';
+        } else {
+            document.getElementById("consentPopup").style.display = 'none';
+        }
+    }
+    function consent() {
+        sessionStorage.setItem("consent", "True");
+        document.getElementById("consentPopup").style.display = 'none';
+    }
+</script>
