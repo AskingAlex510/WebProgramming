@@ -2,6 +2,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 main > section{
@@ -16,25 +17,45 @@ main > section > header{
     font-size: 20px;
 }
 
-main > div{
-    display: block;
+.scroll-auto{
+    display: flex;
+    align-content: center;
+    margin: 0px 10%;
+    width: 80vw;
+    height: 30%;
+}
+
+.scroll-content{
+    display: flex;
+    justify-content: center;
     align-items: center;
     margin: 1% 10%;
+    overflow: hidden;
+    animation: scrolling 10s linear infinite;
 }
 
-main > div > a > img{
+@keyframes scrolling {
+    0% { transform: translateX(0);}
+    100% { transform: translateX(-180vw);}
+}
+
+.scroll-content > a > img{
     border: 1px solid grey;
-    margin: 1% 2.5%;
-    padding: 1px;
+    justify-content: center;
+    align-items: center;
+    margin: 1% 2px;
+    padding: 2px;
     object-fit:scale-down;
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 
-main > div > a:hover > img{
+.scroll-content > a:hover > img{
     border: none;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
-    main > div{
+    .scroll-content{
         margin: 1% 5%;
     }
 }
