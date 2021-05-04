@@ -1,14 +1,15 @@
 function login() {
-    var email = document.getElementById("mail").value;
-    var pass = document.getElementById("pswd").value;
+    var email = document.querySelector("#mail");
+    var pass = document.querySelector("#pswd");
    
-    if (pass == "password") {
-        alert("Login sucessful, loading account informations");
-        window.location="account.html";
-    }else if (email == '') {
+    if (pass.value == "password") {
+        // alert("Login sucessful, loading account informations");
+        // window.location="account.html";
+        locate();
+    }else if (email.value == '') {
         alert("Please enter your email");       
     }
-    else if (pass == '') {
+    else if (pass.value == '') {
         alert("please enter your password");
     }
     else {
@@ -21,4 +22,8 @@ function login() {
 function clear() {
     document.getElementById("mail").value='';
     document.getElementById("pswd").value='';
+}
+
+function locate() {
+    window.location = "account.html";
 }
