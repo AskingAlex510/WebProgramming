@@ -3,9 +3,8 @@ function login() {
     var pass = document.querySelector("#pswd");
    
     if (pass.value == "password") {
-        // alert("Login sucessful, loading account informations");
-        // window.location="account.html";
-        locate();
+        alert("Login sucessful, loading account informations");
+        window.location = "account.html";
     }else if (email.value == '') {
         alert("Please enter your email");       
     }
@@ -14,16 +13,7 @@ function login() {
     }
     else {
         alert("Wrong credentials, please enter again");
-        clear()
+
     }
 
-}
-
-function clear() {
-    document.getElementById("mail").value='';
-    document.getElementById("pswd").value='';
-}
-
-function locate() {
-    window.location = "account.html";
 }
