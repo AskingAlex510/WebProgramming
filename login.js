@@ -1,19 +1,18 @@
 function login() {
     var email = document.querySelector("#mail");
     var pass = document.querySelector("#pswd");
-   
-    if (pass.value == "password") {
-        alert("Login sucessful, loading account informations");
-        window.location = "account.html";
-    }else if (email.value == '') {
+    if (email.value == '') {
         alert("Please enter your email");       
     }
-    else if (pass.value == '') {
+    if (pass.value == "password" && email.value != "" ) {
+        alert("Login sucessful, loading account informations");
+        window.open = "account.html";
+    }else if (pass.value==""){
         alert("please enter your password");
-    }
-    else {
+    }else{
         alert("Wrong credentials, please enter again");
-
     }
+
+
 
 }
