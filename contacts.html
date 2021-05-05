@@ -66,19 +66,19 @@
             <label for="Pphone">Phone</label><br>
 
             <label>Available for Contact:</label><br>
-            <input type="checkbox" id="mon" name="mon" value="m">
+            <input type="checkbox" id="mon" name="available" value="m">
             <label for="mon">Monday</label><br>
-            <input type="checkbox" id="tue" name="tue" value="t">
+            <input type="checkbox" id="tue" name="available" value="t">
             <label for="tue">Tuesday</label><br>
-            <input type="checkbox" id="wed" name="wed" value="w">
+            <input type="checkbox" id="wed" name="available" value="w">
             <label for="wed">Wednesday</label><br>
-            <input type="checkbox" id="thu" name="thu" value="th">
+            <input type="checkbox" id="thu" name="available" value="th">
             <label for="thu">Thursday</label><br>
-            <input type="checkbox" id="fri" name="fri" value="f">
+            <input type="checkbox" id="fri" name="available" value="f">
             <label for="fri">Friday</label><br>
-            <input type="checkbox" id="sat" name="sat" value="s">
+            <input type="checkbox" id="sat" name="available" value="s">
             <label for="sat">Saturday</label><br>
-            <input type="checkbox" id="sun" name="sun" value="su">
+            <input type="checkbox" id="sun" name="available" value="su">
             <label for="sun">Sunday</label><br>
 
             <label>Message:</label><br>
@@ -86,7 +86,7 @@
 
         </form>
         <button type="reset" form="contact" value="reset">Clear</button>
-        <button type="submit" form="contact" value="submit">Submit</button>
+        <button onclick="validateForm()" type="submit" form="contact" value="submit">Submit</button>
     </section>
 </main>
 
@@ -109,3 +109,4 @@
 </body>
 </html>
 <script src="app.js"></script>
+<script src="contact.js"></script>
