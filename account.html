@@ -27,7 +27,7 @@
                     <a href="browse_cat.html">Browse Stores by Category </a>
                 </div>
             </li>
-            <li><a class="active" href="login.html">MY ACCOUNT</a></li>
+            <li><a class="active" onclick="loggedStatus()">MY ACCOUNT</a></li>
             <li><a href="fees.html">FEES</a></li>
             <li><a href="aboutus.html">ABOUT US</a></li>
             <li><a href="index.html">HOME</a></li>
@@ -37,18 +37,57 @@
 </header>
 
 <main>
+    <style>
+
+
+        #profile_picture {
+            float: right;
+            width: 30%;
+            margin: 20px;
+            /* padding: 50px */
+        }
+
+        #info {
+            float:left;
+            width: 40%;
+            margin: 30px;
+        }
+
+        #logout {
+            clear:both;
+            color:rgb(0, 90, 150);
+            float: right;
+            width: 30%;
+            font-size: 24px;
+            margin-left:20px;
+            margin-top: 10px;
+        }
+
+        #logbutton:hover {
+            color: red;
+            text-decoration: underline;
+        }
+    </style>
 
     <h1 align="center">ACCOUNT DETAIL</h1>
-    <div align="center">
+    <div id="profile_picture">
     <h2>Profile Picture</h2><br>
-    <img src="" alt="Users Profile Picture">
-    <h2>Full Name</h2><br>
-        <p>User Name</p>
-    <h2>E-Mail Address</h2><br>
-        <p>User Email</p>
-    <h2>Phone Number</h2><br>
-        <p>User Phone</p>
+    <img src="./image/default_pic.jpg" alt="Users Profile Picture">
+    <!-- image soursed  and used for educational purposes: 
+    https://thepeakid.com/peak-coeur-dalene/personal-training/default-profile-picture/ -->
     </div>
+    <div align="center" id="info">
+        <h2>User's info</h2><br>
+        <h3>Full Name:</h3> 
+        <p>Username</p><br>
+        <h3>E-Mail Address:</h3>
+        <p id = "logMail"></p><br>
+        <h3>Phone Number:</h3>
+        <p>000.000-0000</p><br>
+    </div>
+    <div id="logout">
+       <a id="logbutton" onclick="logout()" ><h4>Logout</h4></a>
+    </div> 
 
 </main>
 
@@ -71,3 +110,10 @@
 </body>
 </html>
 <script src="app.js"></script>
+<script>
+    document.getElementById("logMail").innerHTML = localStorage.getItem("log-mail");
+    function logout() {
+        localStorage.removeItem("log-mail");
+        window.open("login.html");
+    }
+</script>

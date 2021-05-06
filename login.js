@@ -5,6 +5,7 @@ function login() {
         alert("Please enter your email");       
     }
     if (pass.value == "password" && email.value != "" ) {
+        localStorage.setItem("log-mail", email.value);
         alert("Login sucessful, loading account informations");
         window.open = "account.html";
     }else if (pass.value==""){
@@ -12,7 +13,5 @@ function login() {
     }else{
         alert("Wrong credentials, please enter again");
     }
-
-
-
 }
+

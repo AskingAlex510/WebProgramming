@@ -23,4 +23,5 @@
 	cat5-product2:https://gearvn.com/products/sony-playstation-classic
 	cat5-product3:https://gearvn.com/products/may-choi-game-sony-playstation-4-pro-1tb-om-2
 	cat5-product4:https://gearvn.com/products/may-choi-game-sony-playstion-5
+	default_pic:https://thepeakid.com/peak-coeur-dalene/personal-training/default-profile-picture/
 
