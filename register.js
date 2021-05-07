@@ -1,80 +1,71 @@
-console.log("this file is working");
+const form = document.getElementById('register');
 
-function validMail(email) {
-    var mailPatten = /^[a-zA-Z0-9]([a-zA-Z0-9]\.?){1,}[a-zA-Z0-9]@[a-zA-Z0-9]+(\.?[a-zA-Z0-9]){1,}\.[a-zA-Z0-9]{2,5}$/;
-    if (mailPatten.test(email)){
-        return true;
+const email = document.getElementById('mail');
+
+const phone = document.getElementById('phone');
+
+const pswd = document.getElementById('pswd');
+const re_pswd = document.getElementById('pswd-con');
+
+const fname = document.getElementById('name_first');
+const lname = document.getElementById('name_last');
+const address = document.getElementById('address');
+const city = document.getElementById('city');
+const zip = document.getElementById('zip');
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
+    checkInputs()
+});
+
+function checkInputs() {
+    //email check
+    const emailValue = email.value.trim();
+    const regExp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if (regExp.test(emailValue) == false){
+        alert("Invalid Email address.")
     }
-    
-    else{
-        alert("Wrong email format, please enter again");
-        return false;
-    }
+        //phone check
+        const phoneValue = phone.value.trim();
+        const regExp1 = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im
+        if (regExp1.test(phoneValue) == false) {
+            alert("Invalid phone number.")
+        }
+        //password check
+        const pswdValue = pswd.value
+        const regExp2 = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,10}$/
+        if (regExp2.test(pswdValue) == false) {
+            alert("Invalid Password. Must contain 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special character.")
+        }
+        //re password check
+        const re_pswdValue = re_pswd.value
+        if(re_pswdValue !== pswdValue){
+            alert("Passwords do not match.")
+        }
+        //fname check
+        const fnameValue = fname.value.trim();
+        if(fnameValue.length < 3){
+        alert("First name value too short. ")
+        }
+        //lname check
+         const lnameValue = lname.value.trim();
+         if(lnameValue.length < 3){
+         alert("Last name value too short. ")
+         }
+        //address check
+        const addressValue = address.value.trim();
+         if(addressValue.length < 3){
+         alert("Address value too short. ")
+         }
+        //city check
+         const cityValue = city.value.trim();
+         if(cityValue.length < 3){
+        alert("City value too short. ")
+        }
+        //zip check
+        const zipValue = zip.value
+        const regExp3 = /[0-9]/
+        if (regExp3.test(zipValue) == false || zipValue.length < 4 || zipValue.length > 7){
+            alert("Zip code is invalid.")
+        }
 }
-
-/*  Original Javascript soursed and adapted for educational purposes:
-    https://www.w3resource.com/javascript/form/email-validation.php */
-
-function validPhone(phoneNum) {
-    var phonePatten = /^[^.-\s]([0-9][.-\s]?){9,11}[^.-\s]$/;
-    if (phonePatten.test(phoneNum)) {
-        return true;
-    }
-    else {
-        alert("please re-enter your phone number");
-        return false;
-    }
-
-}
-/*  Original Javascript soursed and adapted for educational purposes:
-    https://www.w3resource.com/javascript/form/email-validation.php */
-
-function validPass(passWord) {
-    var passPatten = /([a-z]+[A-Z]+[0-9]+[!@#$%^&*]+){8,20}/;
-    if (passPatten.test(passWord)) {
-        return true;
-    }
-
-    else{
-        alert("please re-enter your password");
-        return false;
-    }
-
-}
-
-function confirmPassword() {
-    var pass = document.getElementById("pswd");
-    var confirmPass = document.getElementById("pswd-con");
-
-    if (pass.value !== confirmPass.value) {
-        return false;
-    }
-    return true;
-}
-
-/*  Original Javascript soursed and adapted for educational purposes:
-    https://stackoverflow.com/questions/7770187/returning-a-boolean-value-in-a-javascript-function */ 
-
-function validStr(str) {
-    const patten = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]{3,}/;
-
-    if (patten.test(str)) {
-        return true;
-    }
-    else {
-        alert("please re-enter your credentials");
-        return false;
-    }
-}
-
-function validZip(zip) {
-    var zipPatten = /[0-9]{4,6}/;
-
-    if (zipPatten.test(zip)) {
-        return true;
-    }
-    else {
-        return false;
-    }
-}
-

@@ -1,47 +1,55 @@
-function validateForm() {
-    // Begin name length Validation
-    var x = document.forms["contact"]["name"].length;
+const form = document.getElementById('contact');
 
-    if (x < 3) {
-        alert("Name invalid. Must be 3 or more characters.")
-    }
-    //End name length validation
-    //Begin email validation
-    var y = document.forms["contact"]["mail"];
+const name = document.getElementById('name');
 
-    function validateEmail(email) {
-        const re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-        return re.test(email);
-    }
-    if(validateEmail(y) == false){
-        alert("Email address invalid.")
-    }
-    //End email validation
-    //Begin phone validation
-    var z = document.forms["contact"]["phone"];
+const email = document.getElementById('mail');
 
-    function validatePhone(phone) {
-        const re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im
-        return re.test(phone);
-    }
-    if(validatePhone(z) ==false){
-        alert("Phone number invalid.")
-    }
-    //End phone validation
-    //Begin preferred contact validation
-    var c = document.forms["contact"]["Pmail"];
-    var a = document.forms["contact"]["Pphone"];
-    if(c&&a==null){
-        alert("One preferred contact method must be selected.")
-    }
-    //End preferred contact validation
-    //Begin availability validation
-    var d = document.forms["contact"]["available"];
-    if(d==null){
-        alert("At-least one contact date must be selected.")
-    }
-    //End availability validation
-    //Begin message validation
+const phone = document.getElementById('phone');
 
-    //End message validation
+const pref_phone = document.getElementById('Pphone');
+
+const pref_mail = document.getElementById('Pmail');
+
+const mon = document.getElementById('mon');
+const tue = document.getElementById('tue');
+const wed = document.getElementById('wed');
+const thu = document.getElementById('thu');
+const fri = document.getElementById('fri');
+const sat = document.getElementById('sat');
+const sun = document.getElementById('sun');
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
+    checkInputs()
+});
+
+function checkInputs() {
+    //name check
+    const nameValue = name.value.trim();
+
+    if(nameValue.length < 3){
+        alert("Name value too short. ")
+    }
+    //email check
+    const emailValue = email.value.trim();
+    const regExp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if (regExp.test(emailValue) == false){
+        alert("Invalid Email address.")
+    }
+    //phone check
+    const phoneValue = phone.value.trim();
+    const regExp1 = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im
+    if (regExp1.test(phoneValue) == false){
+        alert("Invalid phone number.")
+    }
+    //preferred contact check
+    if(pref_phone.checked == false && pref_mail.checked == false){
+        alert("You must select a preferred contact method.")
+    }
+    //availability check
+    if(mon.checked == false && tue.checked == false && wed.checked == false && thu.checked == false && fri.checked == false && sat.checked == false && sun.checked == false){
+        alert("You must select atleast one available day.")
+    }
+    alert("Your contact for has been successfully submitted!")
+    this.submit()
 }

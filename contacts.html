@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="navigation.css" type="text/css"/>
     <link rel="stylesheet" href="contacts.css" type="text/css">
     <link rel="stylesheet" href="icon.css" type="text/css"/>
-    <link rel="stylesheet" href="app.css" type="text/css">
 </head>
 
 <body onpageshow="popup()">
@@ -27,7 +26,7 @@
                     <a href="browse_cat.html">Browse Stores by Category </a>
                 </div>
             </li>
-            <li><a onclick="loggedStatus()">MY ACCOUNT</a></li>
+            <li><a href="login.html">MY ACCOUNT</a></li>
             <li><a href="fees.html">FEES</a></li>
             <li><a href="aboutus.html">ABOUT US</a></li>
             <li><a href="index.html">HOME</a></li>
@@ -61,25 +60,26 @@
             <input type="tel" id="phone" name="phone"><br>
 
             <label>Preferred Contact:</label><br>
-            <input type="radio" id="Pmail" name="pref" value=m>
+            <input type="radio" id="Pmail" name="pref">
             <label for="Pmail">E-Mail</label>
-            <input type="radio" id="Pphone" name="pref" value=p>
+            <input type="radio" id="Pphone" name="pref">
             <label for="Pphone">Phone</label><br>
 
+
             <label>Available for Contact:</label><br>
-            <input type="checkbox" id="mon" name="available" value="m">
+            <input type="checkbox" id="mon" name="available">
             <label for="mon">Monday</label><br>
-            <input type="checkbox" id="tue" name="available" value="t">
+            <input type="checkbox" id="tue" name="available">
             <label for="tue">Tuesday</label><br>
-            <input type="checkbox" id="wed" name="available" value="w">
+            <input type="checkbox" id="wed" name="available">
             <label for="wed">Wednesday</label><br>
-            <input type="checkbox" id="thu" name="available" value="th">
+            <input type="checkbox" id="thu" name="available">
             <label for="thu">Thursday</label><br>
-            <input type="checkbox" id="fri" name="available" value="f">
+            <input type="checkbox" id="fri" name="available">
             <label for="fri">Friday</label><br>
-            <input type="checkbox" id="sat" name="available" value="s">
+            <input type="checkbox" id="sat" name="available">
             <label for="sat">Saturday</label><br>
-            <input type="checkbox" id="sun" name="available" value="su">
+            <input type="checkbox" id="sun" name="available">
             <label for="sun">Sunday</label><br>
 
             <label>Message:</label><br>
@@ -87,7 +87,7 @@
 
         </form>
         <button type="reset" form="contact" value="reset">Clear</button>
-        <button onclick="validateForm()" type="submit" form="contact" value="submit">Submit</button>
+        <button type="submit" form="contact" value="submit">Submit</button>
     </section>
 </main>
 
