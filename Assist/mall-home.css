@@ -26,6 +26,8 @@ main > section > header{
     --scroll-animation-duration: calc(var(--scroll-elements)*2s);
 
     --scroll1-animation-duration: calc(var(--scroll-elements)*2s);
+
+    --check: 1;
 }
 
 
@@ -175,6 +177,7 @@ main > section > header{
 }
 
 @media screen and (max-width: 767px) {
+
     .scroll_auto{
         width: 80%;
         height: 100%;
@@ -186,8 +189,9 @@ main > section > header{
     }
 
     /** Edit for NEW STORE **/
+   
     .scroll_content{
-        animation-play-state: paused;
+        animation: none;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -203,7 +207,7 @@ main > section > header{
 
     /** Edit for NEW PRODUCT **/
     .scroll_content1{
-        animation-play-state: paused;
+        animation: none;
         display: flex;
         flex-direction: column;
         align-items: center;
