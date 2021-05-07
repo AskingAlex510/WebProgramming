@@ -17,25 +17,37 @@ main > section > header{
     font-size: 20px;
 }
 
+/** I found root here: https://codepen.io/Coding_Journey/pen/yWjWKd **/
+:root{
+    --scroll-width: 80vw;
+    --scroll-height: 20vh;
+    --scroll-elements-displayed: 4;
+    --scroll-elements-width: calc(var(--scroll-width)/var(--scroll-elements-displayed));
+    --scroll-animation-duration: calc(var(--scroll-elements)*2s);
+
+    --scroll1-animation-duration: calc(var(--scroll-elements)*2s);
+}
+
+
 .scroll_auto{
     margin: 0px 10%;
-    width: 80vw;
-    height: 20vh;
+    width: var(--scroll-width);
+    height: var(--scroll-height);
     overflow: hidden;
 }
 
-/**Create the scrolling **/
+/**Create the scrolling for NEW STORE **/
 .scroll_content{
     list-style: none;
     height: 100%;
     display: flex;
     border: none;
-    animation: scrolling 15s linear infinite; 
+    animation: scrolling var(--scroll-animation-duration) linear infinite; 
 }
 
 @keyframes scrolling {
     0% { transform: translateX(0vw);}
-    100% { transform: translateX(-105vw);}
+    100% { transform: translateX(calc(-1*var(--scroll-elements-width)*var(--scroll-elements)));}
 }
 
 
@@ -43,7 +55,7 @@ main > section > header{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20vw;
+    width: var(--scroll-elements-width);
     flex-shrink: 0;
     white-space: nowrap;
 }
@@ -62,6 +74,48 @@ main > section > header{
 }
 
 .scroll_content:hover{
+    animation-play-state: paused;
+}
+
+/** Create the scrolling for NEW PRODUCT **/
+
+.scroll_content1{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    border: none;
+    animation: scrolling var(--scroll1-animation-duration) linear infinite; 
+}
+
+@keyframes scrolling {
+    0% { transform: translateX(0vw);}
+    100% { transform: translateX(calc(-1*var(--scroll-elements-width)*var(--scroll1-elements)));}
+}
+
+
+.scroll_content1 > li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--scroll-elements-width);
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+.scroll_content1 > li > a > img{
+    border: 1px solid grey;
+    margin: 1% 5px;
+    padding: 2px;
+    object-fit:scale-down;
+    width: 15vw;
+    height: 100px;
+}
+
+.scroll_content1 > li:hover > a > img{
+    border: none;
+}
+
+.scroll_content1:hover{
     animation-play-state: paused;
 }
 
@@ -96,16 +150,10 @@ main > section > header{
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
-    .scroll_auto{
-        width: 60vw;
-    }
-
-    .scroll_content > li > a > img{
-        height: 80px;
-    }
-    @keyframes scrolling {
-        0% { transform: translateX(0vw);}
-        100% { transform: translateX(-130vw);}
+    :root{
+        --scroll-width: 60vw;
+        --scroll-height: 16vh;
+        --scroll-elements-displayed: 3;
     }
 
     .display_auto{
@@ -135,9 +183,9 @@ main > section > header{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 1% 10%;
     }
 
+    /** Edit for NEW STORE **/
     .scroll_content{
         animation-play-state: paused;
         display: flex;
@@ -150,6 +198,22 @@ main > section > header{
     }
 
     .scroll_content > li > a >img{
+        width: 200px;
+    }
+
+    /** Edit for NEW PRODUCT **/
+    .scroll_content1{
+        animation-play-state: paused;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        margin: 1% 10%;
+        padding: 0px;
+    }
+
+    .scroll_content1 > li > a >img{
         width: 200px;
     }
 
