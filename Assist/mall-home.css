@@ -17,45 +17,111 @@ main > section > header{
     font-size: 20px;
 }
 
-.scroll-auto{
-    display: flex;
-    align-content: center;
+.scroll_auto{
     margin: 0px 10%;
     width: 80vw;
-    height: 30%;
+    height: 20vh;
+    overflow: hidden;
 }
 
-.scroll-content{
+/**Create the scrolling **/
+.scroll_content{
+    list-style: none;
+    height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1% 10%;
-    overflow: hidden;
-    animation: scrolling 10s linear infinite;
+    border: none;
+    animation: scrolling 15s linear infinite; 
 }
 
 @keyframes scrolling {
-    0% { transform: translateX(0);}
-    100% { transform: translateX(-180vw);}
+    0% { transform: translateX(0vw);}
+    100% { transform: translateX(-105vw);}
 }
 
-.scroll-content > a > img{
-    border: 1px solid grey;
+
+.scroll_content > li{
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1% 2px;
-    padding: 2px;
-    object-fit:scale-down;
+    width: 20vw;
     flex-shrink: 0;
     white-space: nowrap;
 }
 
-.scroll-content > a:hover > img{
+.scroll_content > li > a > img{
+    border: 1px solid grey;
+    margin: 1% 5px;
+    padding: 2px;
+    object-fit:scale-down;
+    width: 15vw;
+    height: 100px;
+}
+
+.scroll_content > li:hover > a > img{
+    border: none;
+}
+
+.scroll_content:hover{
+    animation-play-state: paused;
+}
+
+/** Create the display **/
+.display_auto{
+    margin: 0px 10%;
+    width: 80%;
+    height: 20vh;
+}
+
+.display_content{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10%;
+}
+
+
+.display_content > a > img{
+    border: 1px solid grey;
+    margin: 10px 20px;
+    object-fit:scale-down;
+    width: 200px;
+    height: 100px;
+}
+
+.display_content > li:hover > a > img{
     border: none;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
-    .scroll-content{
-        margin: 1% 5%;
+    .scroll_auto{
+        width: 60vw;
+    }
+
+    .scroll_content > li > a > img{
+        height: 80px;
+    }
+    @keyframes scrolling {
+        0% { transform: translateX(0vw);}
+        100% { transform: translateX(-130vw);}
+    }
+
+    .display_auto{
+        display: block;
+        height: 100%;
+        width: 100%;
+        margin: none;
+    }
+    .display_content{
+        display:inline-block;
+        overflow: none;
+        height: 100%;
+        width: 80%;
+    }
+
+    .display_content > a > img{
+        width: 150px;
     }
 }
