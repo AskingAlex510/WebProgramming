@@ -14,11 +14,11 @@ function popup() {
 
 // keep the login status
 function loggedStatus() {
-    var key = localStorage.getItem("log-mail");
+    key = localStorage.getItem("log-mail");
     if (key === null) {
-        window.open("login.html");
+        window.location = "login.html";
     }
     else {
-        window.open("account.html");
+        window.location = "account.html";
     }
 }

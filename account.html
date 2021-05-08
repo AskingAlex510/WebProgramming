@@ -114,6 +114,6 @@
     document.getElementById("logMail").innerHTML = localStorage.getItem("log-mail");
     function logout() {
         localStorage.removeItem("log-mail");
-        window.open("login.html");
+        window.location = "login.html";
     }
 </script>
