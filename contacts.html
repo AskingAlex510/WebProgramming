@@ -84,7 +84,21 @@
             <label for="sun">Sunday</label><br>
 
             <label>Message:</label><br>
-            <textarea></textarea>
+            <input disabled  maxlength="3" size="3" value="10" id="counter">
+            <textarea onkeyup="textCounter(this,'counter',10);" id="message">
+</textarea>
+            <script>
+                function textCounter(field,field2,maxlimit)
+                {
+                    var countfield = document.getElementById(field2);
+                    if ( field.value.length > maxlimit ) {
+                        field.value = field.value.substring( 0, maxlimit );
+                        return false;
+                    } else {
+                        countfield.value = maxlimit - field.value.length;
+                    }
+                }
+            </script>
 
         </form>
         <button type="reset" form="contact" value="reset">Clear</button>
