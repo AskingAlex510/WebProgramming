@@ -1,3 +1,7 @@
+function Addedtocart() {
+    alert("Product added to cart");
+}
+
 function doShowAll() {
     if (CheckBrowser()) {
         var key = "";
