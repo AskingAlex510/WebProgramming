@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./Assist/app.css" type="text/css">
 </head>
 
-<body onpageshow="popup()">
+<body onpageshow="popup()" onload="doShowAll()">
 
 <header>
     <div class="logo-home">
@@ -40,26 +40,28 @@
 <main>
 <!--Add the items picked-->
 <section>
-<div class="ordered-items">
-    <div class="item">
-        <a><img class="product" src="./image/store-product/cat1-product1.png" alt="Acer Aspire 7"></a>
-        <h3>Laptop gaming Acer Aspire 7 A715 42G R4ST</h3>
-        <h3>Price: </h3><p>18,490,000 VND</p>
-        <h3>Quantity:</h3><input value= "1" />
-    </div>
-    <div class="item">
-        <a><img class="product" src="./image/store-product/cat5-product1.jpg" alt="PS5 DualSence"></a>
-        <h3>PS5 DualSence Controller</h3>
-        <h3>Price: </h3><p>1,990,000 VND</p>
-        <h3>Quantity:</h3><input value= "1" />
-    </div>
-    <div class="item">
-        <a><img class="product" src="./image/store-product/cat4-product4.jpg" alt="Gaming DAREU EK87 - Black (Multi-LED)"></a>
-        <h3>Gaming DAREU EK87 - Black (Multi-LED)</h3>
-        <h3>Price: </h3><p>499,999 VND</p>
-        <h3>Quantity:</h3><input value="1" />
-    </div>
-</div>
+    <table id="list"></table>
+    <label><input type="button" value="Clear" onclick="ClearAll()"></label>
+<!--<div class="ordered-items">-->
+<!--    <div class="item">-->
+<!--        <a><img class="product" src="./image/store-product/cat1-product1.png" alt="Acer Aspire 7"></a>-->
+<!--        <h3>Laptop gaming Acer Aspire 7 A715 42G R4ST</h3>-->
+<!--        <h3>Price: </h3><p>18,490,000 VND</p>-->
+<!--        <h3>Quantity:</h3><input value= "1" />-->
+<!--    </div>-->
+<!--    <div class="item">-->
+<!--        <a><img class="product" src="./image/store-product/cat5-product1.jpg" alt="PS5 DualSence"></a>-->
+<!--        <h3>PS5 DualSence Controller</h3>-->
+<!--        <h3>Price: </h3><p>1,990,000 VND</p>-->
+<!--        <h3>Quantity:</h3><input value= "1" />-->
+<!--    </div>-->
+<!--    <div class="item">-->
+<!--        <a><img class="product" src="./image/store-product/cat4-product4.jpg" alt="Gaming DAREU EK87 - Black (Multi-LED)"></a>-->
+<!--        <h3>Gaming DAREU EK87 - Black (Multi-LED)</h3>-->
+<!--        <h3>Price: </h3><p>499,999 VND</p>-->
+<!--        <h3>Quantity:</h3><input value="1" />-->
+<!--    </div>-->
+<!--</div>-->
 <!-- Original HTML codes sourced and adapted for educational purposes:
     https://iframedev.blogspot.com/2020/11/responsive-shopping-cart-in-html-and-css.html -->
 </section>
@@ -94,3 +96,4 @@
 </body>
 </html>
 <script src="./Assist/app.js"></script>
+<script src="cart.js"></script>
