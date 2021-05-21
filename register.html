@@ -43,7 +43,7 @@
     </header>
     <p>Create your account here!</p>
     <section>
-    <form id="register">
+    <form id="register" method='post' action="register.php">
         <label for="mail">E-Mail Address:</label><br>
         <input type="email" id="mail" name="mail"><br>
         <label for="phone">Phone Number:</label><br>
@@ -55,9 +55,9 @@
         <label for="pic">Upload a Profile Picture:</label><br>
         <input type="file" id="pic" name="pic"><br>
         <label for="name_first">First Name:</label><br>
-        <input type="text" id="name_first" name="name"><br>
+        <input type="text" id="name_first" name="name_first"><br>
         <label for="name_last">Last Name Name:</label><br>
-        <input type="text" id="name_last" name="name"><br>
+        <input type="text" id="name_last" name="name_last"><br>
         <label for="address">Address:</label><br>
         <input type="text" id="address" name="address"><br>
         <label for="city">City:</label><br>
@@ -340,3 +340,48 @@
 </html>
 <script src="app.js"></script>
 <script src="./Assist/register.js"></script>
+
+<?php
+    //$registered_user = fopen("user.txt", 'w');
+	
+    //$id = $_POST[""];
+    //fwrite($registered_user, $id);
+	
+    //$email = $_POST["mail"];
+    //fwrite($registered_user, $email);
+    //$phone = $_POST["phone"];
+    //fwrite($registered_user, $phone);
+    //$pswd = $_POST["pswd"];
+	//$pswd = password_hash($pswd, PASSWORD_DEFAULT);
+	//$pswd = ["pswd"];
+    //file_put($registered_user, $pswd);
+    //$name_first = $_POST["name_first"];
+    //fwrite($registered_user, $name_first);
+    //$name_last = $_POST["name_last"];
+    //fwrite($registered_user, $name_last);
+    //$address = $_POST["address"];
+    //fwrite($registered_user, $address);
+    //$city = $_POST["city"];
+    //fwrite($registered_user, $city);
+    //$zip = $_POST["zip"];
+    //fwrite($registered_user, $zip);
+    //$country = $_POST["country"];
+    //fwrite($registered_user, $country);
+
+    
+    //echo 'You have been successfully registered';
+	
+	$keys = array("mail", "phone", "pswd", "name_first", "name_last", "address", "city", "zip", "country");
+	$csv_line = $keys;
+	foreach($keys as $key){
+		array_push($csv_line,'' . $_POST[$key]);
+	}
+	$fname = 'user.csv';
+	$csv_line = implode(',',$csv_line);
+	if(!file_exists($fname)){$csv_line = $csv_line . "\r\n"  ;}
+	$fcon = fopen($fname, 'a');
+	$fcontent = $csv_line;
+	fwrite($fcon,$csv_line);
+	fclose($fcon);
+
+?>
