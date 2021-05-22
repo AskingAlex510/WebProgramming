@@ -20,7 +20,7 @@ main > section > header{
 /** I found root here: https://codepen.io/Coding_Journey/pen/yWjWKd **/
 :root{
     --scroll-width: 80vw;
-    --scroll-height: 20vh;
+    --scroll-height: 24vh;
     --scroll-elements-displayed: 4;
     --scroll-elements-width: calc(var(--scroll-width)/var(--scroll-elements-displayed));
     --scroll-animation-duration: calc(var(--scroll-elements)*2s);
@@ -36,14 +36,25 @@ main > section > header{
     width: var(--scroll-width);
     height: var(--scroll-height);
     overflow: hidden;
+    
+}
+
+li > div{
+    width: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+li > div > p{
+    font-size: 12;
+    margin: 0;
 }
 
 /**Create the scrolling for NEW STORE **/
 .scroll_content{
     list-style: none;
-    height: 100%;
+    height: 80%;
     display: flex;
-    border: none;
     animation: scrolling var(--scroll-animation-duration) linear infinite; 
 }
 
@@ -55,11 +66,15 @@ main > section > header{
 
 .scroll_content > li{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: var(--scroll-elements-width);
+    height: 100%;
     flex-shrink: 0;
     white-space: nowrap;
+    overflow: hidden;
+
 }
 
 .scroll_content > li > a > img{
@@ -68,7 +83,7 @@ main > section > header{
     padding: 2px;
     object-fit:scale-down;
     width: 15vw;
-    height: 100px;
+    height: 90px;
 }
 
 .scroll_content > li:hover > a > img{
@@ -83,25 +98,27 @@ main > section > header{
 
 .scroll_content1{
     list-style: none;
-    height: 100%;
+    height: 80%;
     display: flex;
-    border: none;
-    animation: scrolling var(--scroll1-animation-duration) linear infinite; 
+    animation: scrolling var(--scroll-animation-duration) linear infinite; 
 }
 
 @keyframes scrolling {
     0% { transform: translateX(0vw);}
-    100% { transform: translateX(calc(-1*var(--scroll-elements-width)*var(--scroll1-elements)));}
+    100% { transform: translateX(calc(-1*var(--scroll-elements-width)*var(--scroll-elements)));}
 }
 
 
 .scroll_content1 > li{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: var(--scroll-elements-width);
+    height: 100%;
     flex-shrink: 0;
     white-space: nowrap;
+    overflow: hidden;
 }
 
 .scroll_content1 > li > a > img{
@@ -110,7 +127,7 @@ main > section > header{
     padding: 2px;
     object-fit:scale-down;
     width: 15vw;
-    height: 100px;
+    height: 90px;
 }
 
 .scroll_content1 > li:hover > a > img{
@@ -138,6 +155,20 @@ main > section > header{
     margin: 0px 10%;
 }
 
+.display_content > a{
+    width: 50%;
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: black;
+}
+
+.display_content > a >p{
+    margin: 0% 20px;
+}
 
 .display_content > a > img{
     border: 1px solid grey;
@@ -158,6 +189,10 @@ main > section > header{
         --scroll-elements-displayed: 3;
     }
 
+    .scroll_auto{
+        height: 200px;      
+    }
+
     .display_auto{
         display: block;
         height: 100%;
@@ -165,10 +200,17 @@ main > section > header{
         margin: none;
     }
     .display_content{
-        display:inline-block;
+        display:block;
         overflow: none;
         height: 100%;
         width: 80%;
+    }
+
+    .display_content > a{
+        display: flex;
+        width: 50%;
+        text-decoration: none;
+        border: 1px solid black;
     }
 
     .display_content > a > img{
@@ -179,7 +221,7 @@ main > section > header{
 @media screen and (max-width: 767px) {
 
     .scroll_auto{
-        width: 80%;
+        width: 100%;
         height: 100%;
         overflow: none;
         display: flex;
@@ -201,6 +243,12 @@ main > section > header{
         padding: 0px;
     }
 
+    .scroll_content > li{
+        width: 200px;
+        margin: 10px 0px;
+        border: 1px solid black;
+    }
+
     .scroll_content > li > a >img{
         width: 200px;
     }
@@ -215,6 +263,12 @@ main > section > header{
         width: 80%;
         margin: 1% 10%;
         padding: 0px;
+    }
+
+    .scroll_content1 > li{
+        width: 200px;
+        margin: 10px 0px;
+        border: 1px solid black;
     }
 
     .scroll_content1 > li > a >img{
@@ -236,6 +290,10 @@ main > section > header{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .display_content > a{
+        border: 1px solid black;
     }
 
 }
