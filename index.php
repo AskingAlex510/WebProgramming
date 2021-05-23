@@ -30,7 +30,7 @@
             <li><a onclick="loggedStatus()">MY ACCOUNT</a></li>
             <li><a href="fees.html">FEES</a></li>
             <li><a href="aboutus.html">ABOUT US</a></li>
-            <li><a class="active" href="index.html">HOME</a></li>
+            <li><a class="active" href="index.php">HOME</a></li>
         </ul>
     </nav>
     </div>
@@ -42,13 +42,21 @@
         <ul class="scroll_content">
         <?php
             $fp = fopen('stores.csv', 'r');
-            while ($i = fgetcsv($fp)){
+            $stores_time[] = array(fgetcsv($fp));
+            $a = fgetcsv($fp);
+            function cmp_date_store($p1, $p2) {
+                return $p1[$a[3]] - $p2[$a[3]];
+              }
+              usort($stores_time, "cmp_date_store");
+            while ($i = fgetcsv($fp)){              
                 if($i[4] == 'TRUE'){
                     echo'<li>';
                     echo'<a href="./newstore1.html"><img src="./image/logo-store1.jpg" alt="Computer Tech" id="s1"></a>';
                     echo'<div>';
                     echo'<p>';
+                    echo'<pre>';
                     printf("%s", $i[1]);
+                    echo'</pre>';
                     echo'</p>';
                     echo'</div>';
                     echo'</li>'; 
@@ -98,7 +106,7 @@
             $count = 0;
             while($i = fgetcsv($fd)){
                 if($i[4] == 'TRUE'){
-                    if($count < 5){
+                    if($count < 10){
                         echo'<a href="./newstore1.html">';
                         echo'<img src="./image/logo-store1.jpg"  alt="Computer Tech" id="f1">';
                         echo'<p>';
@@ -121,7 +129,7 @@
             $count = 0;
             while ($i = fgetcsv($fp)){
                 if($i[5] == 'TRUE'){
-                    if($count < 5){
+                    if($count < 10){
                         if($check == 1 ){
                             echo'<a href="./product.html"><img src="./image/store-product/cat5-product2.jpg"  alt="product jpg" id="p1">';
                             echo'<p>';
