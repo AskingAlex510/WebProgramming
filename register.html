@@ -342,46 +342,33 @@
 <script src="./Assist/register.js"></script>
 
 <?php
-    //$registered_user = fopen("user.txt", 'w');
+	//start input form elements
 	
-    //$id = $_POST[""];
-    //fwrite($registered_user, $id);
+	//suppress error reporting 
+	error_reporting(E_ERROR | E_PARSE);
 	
-    //$email = $_POST["mail"];
-    //fwrite($registered_user, $email);
-    //$phone = $_POST["phone"];
-    //fwrite($registered_user, $phone);
-    //$pswd = $_POST["pswd"];
-	//$pswd = password_hash($pswd, PASSWORD_DEFAULT);
-	//$pswd = ["pswd"];
-    //file_put($registered_user, $pswd);
-    //$name_first = $_POST["name_first"];
-    //fwrite($registered_user, $name_first);
-    //$name_last = $_POST["name_last"];
-    //fwrite($registered_user, $name_last);
-    //$address = $_POST["address"];
-    //fwrite($registered_user, $address);
-    //$city = $_POST["city"];
-    //fwrite($registered_user, $city);
-    //$zip = $_POST["zip"];
-    //fwrite($registered_user, $zip);
-    //$country = $_POST["country"];
-    //fwrite($registered_user, $country);
-
-    
-    //echo 'You have been successfully registered';
-	
+	//take input and create array
 	$keys = array("mail", "phone", "pswd", "name_first", "name_last", "address", "city", "zip", "country");
+	
+	//change array reference to csv_line
 	$csv_line = $keys;
+	// for each item ($key) in the array
 	foreach($keys as $key){
+		//push the posted value of each key into the end of the array
 		array_push($csv_line,'' . $_POST[$key]);
 	}
+	// declare the .csv
 	$fname = 'user.csv';
+	//set up implode array to comma seperated single-element
 	$csv_line = implode(',',$csv_line);
-	if(!file_exists($fname)){$csv_line = $csv_line . "\r\n"  ;}
+	//if the csv file does not exist, set indicator to the beginning of a new line
+	$csv_line = $csv_line . "\r\n"  ;
+	//define open file and append
 	$fcon = fopen($fname, 'a');
+	//define content as above
 	$fcontent = $csv_line;
+	//append content
 	fwrite($fcon,$csv_line);
+	//close
 	fclose($fcon);
-
 ?>
