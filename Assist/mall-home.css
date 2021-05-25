@@ -140,9 +140,7 @@ li > div > p{
 
 /** Create the display **/
 .display_auto{
-    margin: 0px 10%;
-    width: 80%;
-    height: 20vh;
+    width: 100%;
 }
 
 .display_content{
@@ -150,13 +148,12 @@ li > div > p{
     display: flex;
     flex-direction: row;
     border: none;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     margin: 0px 10%;
 }
 
 .display_content > a{
-    width: 50%;
     display: flex;
     text-decoration: none;
     flex-direction: column;
@@ -207,10 +204,8 @@ li > div > p{
     }
 
     .display_content > a{
-        display: flex;
-        width: 50%;
-        text-decoration: none;
         border: 1px solid black;
+        margin: 10px 0%;
     }
 
     .display_content > a > img{

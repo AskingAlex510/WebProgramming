@@ -30,7 +30,7 @@
             <li><a onclick="loggedStatus()">MY ACCOUNT</a></li>
             <li><a href="fees.html">FEES</a></li>
             <li><a href="aboutus.html">ABOUT US</a></li>
-            <li><a class="active" href="index.html">HOME</a></li>
+            <li><a class="active" href="index.php">HOME</a></li>
         </ul>
     </nav>
     </div>
@@ -41,18 +41,30 @@
     <div class="scroll_auto">
         <ul class="scroll_content">
         <?php
-            $fp = fopen('stores.csv', 'r');
-            while ($i = fgetcsv($fp)){
-                if($i[4] == 'TRUE'){
-                    echo'<li>';
-                    echo'<a href="./newstore1.html"><img src="./image/logo-store1.jpg" alt="Computer Tech" id="s1"></a>';
-                    echo'<div>';
-                    echo'<p>';
-                    printf("%s", $i[1]);
-                    echo'</p>';
-                    echo'</div>';
-                    echo'</li>'; 
-                }
+            $sort_array = [];
+            $fs = fopen('stores.csv', 'r');
+            while($sort_element = fgetcsv($fs)){
+                $sort_array [] = $sort_element;
+            }
+            function cmp_date_store($s1, $s2) {
+                return strtotime($s2[3]) - strtotime($s1[3]);
+              }
+            usort($sort_array, 'cmp_date_store');
+            
+            $count = 0;
+            foreach ($sort_array as $entry){ 
+                if ($count >= 10) {
+                    break;
+                }             
+                echo'<li>';
+                echo'<a href="./newstore1.html"><img src="./image/logo-store1.jpg" alt="Computer Tech" id="s1"></a>';
+                echo'<div>';
+                echo'<p>';
+                printf("%s", $entry[1]);
+                echo'</p>';
+                echo'</div>';
+                echo'</li>'; 
+                $count++;
             }
             ?>
         </ul>
@@ -62,29 +74,35 @@
     <div class="scroll_auto">
         <ul class="scroll_content1">
         <?php
+            $sort_product_array = [];
             $fp = fopen('products.csv', 'r');
+            while($sort_product_element = fgetcsv($fp)){
+                $sort_product_array [] = $sort_product_element;
+            }
+            function cmp_date_product($p1, $p2) {
+                return strtotime($p2[3]) - strtotime($p1[3]);
+              }
+            usort($sort_product_array, 'cmp_date_product');
             $check = 1;
             $count = 0;
-            while ($i = fgetcsv($fp)){
-                if($i[5] == 'TRUE'){
-                    if($count < 10){
-                        echo'<li>';
-                        if($check == 1 ){
-                            echo'<a href="./product.html"><img src="./image/store-product/cat5-product2.jpg"  alt="product jpg" id="p1"></a>';
-                            $check++;
-                            }
-                        else{
-                            echo'<a href="./product2.html"><img src="./image/store-product/cat4-product4.jpg"  alt="product jpg" id="p2"></a>';
-                            $check = 1;
-                            } 
-                        echo'<div>';
-                        echo'<p>';
-                        printf("%s", $i[1]);
-                        echo'</p>';
-                        echo'</div>';
-                        echo'</li>'; 
-                        $count++;
-                    }
+            foreach ($sort_product_array as $entry){
+                if($count < 10){
+                    echo'<li>';
+                    if($check == 1 ){
+                        echo'<a href="./product.html"><img src="./image/store-product/cat5-product2.jpg"  alt="product jpg" id="p1"></a>';
+                        $check++;
+                        }
+                    else{
+                        echo'<a href="./product2.html"><img src="./image/store-product/cat4-product4.jpg"  alt="product jpg" id="p2"></a>';
+                        $check = 1;
+                        } 
+                    echo'<div>';
+                    echo'<p>';
+                    printf("%s", $entry[1]);
+                    echo'</p>';
+                    echo'</div>';
+                    echo'</li>'; 
+                    $count++;
                 }
             }
             ?>
@@ -98,7 +116,7 @@
             $count = 0;
             while($i = fgetcsv($fd)){
                 if($i[4] == 'TRUE'){
-                    if($count < 5){
+                    if($count < 10){
                         echo'<a href="./newstore1.html">';
                         echo'<img src="./image/logo-store1.jpg"  alt="Computer Tech" id="f1">';
                         echo'<p>';
@@ -121,7 +139,7 @@
             $count = 0;
             while ($i = fgetcsv($fp)){
                 if($i[5] == 'TRUE'){
-                    if($count < 5){
+                    if($count < 10){
                         if($check == 1 ){
                             echo'<a href="./product.html"><img src="./image/store-product/cat5-product2.jpg"  alt="product jpg" id="p1">';
                             echo'<p>';
