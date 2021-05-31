@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="navigation.css" type="text/css"/>
+    <link rel="stylesheet" href="./Assist/contacts.css" type="text/css">
+    <link rel="stylesheet" href="./Assist/icon.css" type="text/css"/>
+    <link rel="stylesheet" href="./Assist/app.css" type="text/css">
+</head>
+
+<body onpageshow="popup()">
+<header>
+    <div class="logo-home">
+        <a href="index.php"><img src="./image/mall-logo.jpg" alt="shopping cart creative"></a>
+    </div>
+    <div id="topnav">
+    <nav>
+        <ul>
+            <li><a href="order.php">ORDERS</a></li>
+            <li><a class="active" href="contacts.php">CONTACTS</a></li>
+            <li><a href="faqs.php">FAQS</a></li>
+            <li class="dropdown">
+                <a class="dropbutton">BROWSE</a>
+                <div class="drop-content">
+                    <a href="browse_name.php">Browse Stores by Names</a>
+                    <a href="browse_cat.php">Browse Stores by Category </a>
+                </div>
+            </li>
+            <li><a href="login.php">MY ACCOUNT</a></li>
+            <li><a href="fees.php">FEES</a></li>
+            <li><a href="aboutus.php">ABOUT US</a></li>
+            <li><a href="index.php">HOME</a></li>
+        </ul>
+    </nav>
+    </div>
+</header>
+
+<main>
+    <header>
+        <h1>CONTACT FORM</h1>
+    </header>
+    <p>Need to contact us? Fill out the form below!</p>
+    <section>
+        <form id="contact">
+            <label for="reason">Reason for Contact:</label><br>
+            <select name="reason" id="reason">
+                <option value="3">Business Interest</option>
+                <option value="2">Account Issues</option>
+                <option value="1">Comments & Suggestions</option>
+                <option value="0">Other</option>
+            </select><br>
+
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+
+            <label for="mail">E-Mail Address:</label><br>
+            <input type="email" id="mail" name="mail"><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone"><br>
+
+            <label>Preferred Contact:</label><br>
+            <input type="radio" id="Pmail" name="pref">
+            <label for="Pmail">E-Mail</label>
+            <input type="radio" id="Pphone" name="pref">
+            <label for="Pphone">Phone</label><br>
+
+
+            <label>Available for Contact:</label><br>
+            <input type="checkbox" id="mon" name="available">
+            <label for="mon">Monday</label><br>
+            <input type="checkbox" id="tue" name="available">
+            <label for="tue">Tuesday</label><br>
+            <input type="checkbox" id="wed" name="available">
+            <label for="wed">Wednesday</label><br>
+            <input type="checkbox" id="thu" name="available">
+            <label for="thu">Thursday</label><br>
+            <input type="checkbox" id="fri" name="available">
+            <label for="fri">Friday</label><br>
+            <input type="checkbox" id="sat" name="available">
+            <label for="sat">Saturday</label><br>
+            <input type="checkbox" id="sun" name="available">
+            <label for="sun">Sunday</label><br>
+
+            <label>Message:</label><br>
+            <input disabled  maxlength="3" size="3" value="10" id="counter">
+            <textarea onkeyup="textCounter(this,'counter',10);" id="message">
+</textarea>
+            <script>
+                function textCounter(field,field2,maxlimit)
+                {
+                    var countfield = document.getElementById(field2);
+                    if ( field.value.length > maxlimit ) {
+                        field.value = field.value.substring( 0, maxlimit );
+                        return false;
+                    } else {
+                        countfield.value = maxlimit - field.value.length;
+                    }
+                }
+            </script>
+
+        </form>
+        <button type="reset" form="contact" value="reset">Clear</button>
+        <button type="submit" form="contact" value="submit">Submit</button>
+    </section>
+</main>
+
+<footer>
+    <div id="botnav">
+        <nav>
+            <ul>
+                <li><a href="privacy.php">Privacy Policy</a></li>
+                <li><a href="tos.php">Terms of Service</a></li>
+                <li><a href="copyright.php">Copyright</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+<div id="consentPopup" class="hidden">
+    <p>This site uses cookies to improve the user experience. By clicking
+        here you accept cookies placed by our site.</p> <a id="accept" href="#">Learn More</a>
+    <button onclick="consent()">I Consent</button>
+</div>
+</body>
+</html>
+<script src="./Assist/app.js"></script>
+<script src="./Assist/contact.js"></script>

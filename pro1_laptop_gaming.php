@@ -11,7 +11,7 @@
     <!--START HEADER-->
     <header>
         <div class="logo-store">
-            <a href="./newstore1.html"><img src="./image/logo-store1.jpg" alt="Computer Tech"></a>
+            <a href="./newstore1.php"><img src="./image/logo-store1.jpg" alt="Computer Tech"></a>
         </div>
 
         <div class="search-bar">
@@ -27,31 +27,31 @@
     <nav>
         <div class="nav-for-store">
             <div class="nav-button">
-                <a href="index.html">Home Page</a>
+                <a href="index.php">Home Page</a>
             </div>
             <div class="nav-button">
-                <a href="./aboutus.html">About Us</a>
+                <a href="./aboutus.php">About Us</a>
             </div>
             <div class="nav-button">
-                <a href="./contacts.html">Contacts Us</a>
+                <a href="./contacts.php">Contacts Us</a>
             </div>
             <div class="dropdown-menu">
                 <a class="nav-button" href="#">Product</a>
                 <div class="dropdown-content">
                     <a href="#">Browse Products by Category</a>
                     <div class="category-product">
-                            <a href="./pro1_laptop_gaming.html">Laptop Gaming</a>
-                            <a href="./pro2_pc_gaming.html">PC Gaming</a>
-                            <a href="./pro3_monitors.html">Monitors</a>
-                            <a href="./pro4_keyboard.html">Keyboard</a>
-                            <a href="./pro5_console.html">Console</a>
+                            <a href="./pro1_laptop_gaming.php">Laptop Gaming</a>
+                            <a href="./pro2_pc_gaming.php">PC Gaming</a>
+                            <a href="./pro3_monitors.php">Monitors</a>
+                            <a href="./pro4_keyboard.php">Keyboard</a>
+                            <a href="./pro5_console.php">Console</a>
                     </div>
                 </div>
                 <div class="category-time">
                     <a  href="#">Browse Products by Created Time</a>
                     <div class="category-product-time">
-                        <a href="./pro_new.html">Newest First</a>
-                        <a href="./pro_old.html">Oldest First</a>
+                        <a href="./pro_new.php">Newest First</a>
+                        <a href="./pro_old.php">Oldest First</a>
                     </div>
                 </div>
             </div>
@@ -73,26 +73,26 @@
             <header>Category: Laptop Gaming</header>
             <div class="main-layout">
                 <div class="product-store">
-                    <a href="./product.html"><img class="image-product" src="./image/store-product/cat1-product1.png" alt=""></a>
-                    <a href="./product.html"><h3 class="name-product">Laptop gaming Acer Aspire 7 A715 42G R4ST</h3></a>
+                    <a href="./product.php"><img class="image-product" src="./image/store-product/cat1-product1.png" alt=""></a>
+                    <a href="./product.php"><h3 class="name-product">Laptop gaming Acer Aspire 7 A715 42G R4ST</h3></a>
                     <p class="price-product"><Strong>Price:</Strong> 18,490,000 VND</p>
                     <p><Strong>Update:</Strong> 12/04/2021</p>
                 </div>
                 <div class="product-store">
-                    <a href="./product2.html"><img class="image-product" src="./image/store-product/cat1-product2.png" alt=""></a>
-                    <a href="./product2.html"><h3 class="name-product">Laptop gaming Acer Nitro 5 AN515 44 R9JM</h3></a>
+                    <a href="./product2.php"><img class="image-product" src="./image/store-product/cat1-product2.png" alt=""></a>
+                    <a href="./product2.php"><h3 class="name-product">Laptop gaming Acer Nitro 5 AN515 44 R9JM</h3></a>
                     <p class="price-product"><Strong>Price:</Strong> 18,790,000 VND</p>
                     <p><Strong>Update:</Strong> 25/03/2021</p>
                 </div>
                 <div class="product-store">
-                    <a href="./product.html"><img class="image-product" src="./image/store-product/cat1-product3.png" alt=""></a>
-                    <a href="./product.html"><h3 class="name-product">Laptop ASUS TUF Gaming F15 FX506LH HN002T</h3></a>
+                    <a href="./product.php"><img class="image-product" src="./image/store-product/cat1-product3.png" alt=""></a>
+                    <a href="./product.php"><h3 class="name-product">Laptop ASUS TUF Gaming F15 FX506LH HN002T</h3></a>
                     <p class="price-product"><Strong>Price:</Strong> 19,490,000 VND</p>
                     <p><Strong>Update:</Strong> 01/04/2021</p>
                 </div>
                 <div class="product-store">
-                    <a href="./product.html"><img class="image-product" src="./image/store-product/cat1-product4.jpg" alt=""></a>
-                    <a href="./product.html"><h3 class="name-product">Laptop gaming Acer Nitro 5 AN515 55 5923</h3></a>
+                    <a href="./product.php"><img class="image-product" src="./image/store-product/cat1-product4.jpg" alt=""></a>
+                    <a href="./product.php"><h3 class="name-product">Laptop gaming Acer Nitro 5 AN515 55 5923</h3></a>
                     <p class="price-product"><Strong>Price:</Strong> 19,590,000 VND</p>
                     <p><Strong>Update:</Strong> 09/04/2021</p>
                 </div>
@@ -105,9 +105,9 @@
         <!--START WITH FOOTER-->
     <footer>
         <nav class="bot-nav">
-                <section><a href="../privacy.html">Privacy Policy</a></section>
-                <section><a href="../tos.html">Terms of Service</a></section>
-                <section><a href="../copyright.html">Copyright</a></section>
+                <section><a href="../privacy.php">Privacy Policy</a></section>
+                <section><a href="../tos.php">Terms of Service</a></section>
+                <section><a href="../copyright.php">Copyright</a></section>
         </nav>
     </footer>
     <div id="consentPopup" class="hidden">

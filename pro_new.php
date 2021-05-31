@@ -11,7 +11,7 @@
     <!--START HEADER-->
     <header>
         <div class="logo-store">
-            <a href="./newstore1.html"><img src="./image/logo-store1.jpg" alt="Computer Tech"></a>
+            <a href="./newstore1.php"><img src="./image/logo-store1.jpg" alt="Computer Tech"></a>
         </div>
 
         <div class="search-bar">
@@ -27,31 +27,31 @@
     <nav>
         <div class="nav-for-store">
             <div class="nav-button">
-                <a href="index.html">Home Page</a>
+                <a href="index.php">Home Page</a>
             </div>
             <div class="nav-button">
-                <a href="./aboutus.html">About Us</a>
+                <a href="./aboutus.php">About Us</a>
             </div>
             <div class="nav-button">
-                <a href="./contacts.html">Contacts Us</a>
+                <a href="./contacts.php">Contacts Us</a>
             </div>
             <div class="dropdown-menu">
                 <a class="nav-button" href="#">Product</a>
                 <div class="dropdown-content">
                     <a href="#">Browse Products by Category</a>
                     <div class="category-product">
-                            <a href="./pro1_laptop_gaming.html">Laptop Gaming</a>
-                            <a href="./pro2_pc_gaming.html">PC Gaming</a>
-                            <a href="./pro3_monitors.html">Monitors</a>
-                            <a href="./pro4_keyboard.html">Keyboard</a>
-                            <a href="./pro5_console.html">Console</a>
+                            <a href="./pro1_laptop_gaming.php">Laptop Gaming</a>
+                            <a href="./pro2_pc_gaming.php">PC Gaming</a>
+                            <a href="./pro3_monitors.php">Monitors</a>
+                            <a href="./pro4_keyboard.php">Keyboard</a>
+                            <a href="./pro5_console.php">Console</a>
                     </div>
                 </div>
                 <div class="category-time">
                     <a  href="#">Browse Products by Created Time</a>
                     <div class="category-product-time">
-                        <a href="./pro_new.html">Newest First</a>
-                        <a href="./pro_old.html">Oldest First</a>
+                        <a href="./pro_new.php">Newest First</a>
+                        <a href="./pro_old.php">Oldest First</a>
                     </div>
                 </div>
             </div>
@@ -73,122 +73,122 @@
             <header>Time: The Newest</header>
             <div class="main-layout">
                 <div class="product-store">
-                    <a href="./product.html"><img class="image-product" src="./image/store-product/cat2-product1.jpg" alt=""></a>
-                    <a href="./product.html"><h3 class="name-product">GVN Titan 10 M</h3></a>
+                    <a href="./product.php"><img class="image-product" src="./image/store-product/cat2-product1.jpg" alt=""></a>
+                    <a href="./product.php"><h3 class="name-product">GVN Titan 10 M</h3></a>
                     <p class="price-product"><Strong>Price:</Strong> Contacts</p>
                     <p><Strong>Update:</Strong> 15/04/2021</p>
                 </div>
                 <div class="product-store">
-                    <a href="./product.html"><img class="image-product" src="./image/store-product/cat4-product2.jpg" alt=""></a>
-                    <a href="./product.html"><h3 class="name-product">Fuhlen G87L</h3></a>
+                    <a href="./product.php"><img class="image-product" src="./image/store-product/cat4-product2.jpg" alt=""></a>
+                    <a href="./product.php"><h3 class="name-product">Fuhlen G87L</h3></a>
                     <p class="price-product"><Strong>Price:</Strong> 440,000 VND</p>
                     <p><Strong>Update:</Strong> 13/04/2021</p>
                 </div>
                 <div class="product-store">
-                    <a href="./product.html"><img class="image-product" src="./image/store-product/cat4-product4.jpg" alt=""></a>
-                    <a href="./product.html"><h3 class="name-product">Gaming DAREU EK87 - Black (Multi-LED)</h3></a>
+                    <a href="./product.php"><img class="image-product" src="./image/store-product/cat4-product4.jpg" alt=""></a>
+                    <a href="./product.php"><h3 class="name-product">Gaming DAREU EK87 - Black (Multi-LED)</h3></a>
                     <p class="price-product"><Strong>Price:</Strong> 499,000 VND</p>
                     <p><Strong>Update:</Strong> 13/04/2021</p>
                 </div>
                 <div class="product-store">
-                    <a href="./product.html"><img class="image-product" src="./image/store-product/cat5-product1.jpg" alt=""></a>
-                    <a href="./product.html"><h3 class="name-product">PS5 DualSense</h3></a>
+                    <a href="./product.php"><img class="image-product" src="./image/store-product/cat5-product1.jpg" alt=""></a>
+                    <a href="./product.php"><h3 class="name-product">PS5 DualSense</h3></a>
                     <p class="price-product"><Strong>Price:</Strong> 1,990,000 VND</p>
                     <p><Strong>Update:</Strong> 13/04/2021</p>
                 </div>
                 <div class="product-store">
-                    <a href="./product.html"><img class="image-product" src="./image/store-product/cat1-product1.png" alt=""></a>
-                    <a href="./product.html"><h3 class="name-product">Laptop gaming Acer Aspire 7 A715 42G R4ST</h3></a>
+                    <a href="./product.php"><img class="image-product" src="./image/store-product/cat1-product1.png" alt=""></a>
+                    <a href="./product.php"><h3 class="name-product">Laptop gaming Acer Aspire 7 A715 42G R4ST</h3></a>
                     <p class="price-product"><Strong>Price:</Strong> 18,490,000 VND</p>
                     <p><Strong>Update:</Strong> 12/04/2021</p>
                 </div>
                 <div class="product-store">
-                    <a href="./product.html"><img class="image-product" src="./image/store-product/cat2-product4.jpg" alt=""></a>
-                    <a href="./product.html"><h3 class="name-product">GVN Yuumi M</h3></a>
+                    <a href="./product.php"><img class="image-product" src="./image/store-product/cat2-product4.jpg" alt=""></a>
+                    <a href="./product.php"><h3 class="name-product">GVN Yuumi M</h3></a>
                     <p class="price-product"><Strong>Price:</Strong> 21,490,000 VND</p>
                     <p><Strong>Update:</Strong> 10/04/2021</p>
                 </div>
                 <div class="product-store">
-                    <a href="./product2.html"><img class="image-product" src="./image/store-product/cat1-product4.jpg" alt=""></a>
-                    <a href="./product2.html"><h3 class="name-product">Laptop gaming Acer Nitro 5 AN515 55 5923</h3></a>
+                    <a href="./product2.php"><img class="image-product" src="./image/store-product/cat1-product4.jpg" alt=""></a>
+                    <a href="./product2.php"><h3 class="name-product">Laptop gaming Acer Nitro 5 AN515 55 5923</h3></a>
                     <p class="price-product"><Strong>Price:</Strong> 19,590,000 VND</p>
                     <p><Strong>Update:</Strong> 09/04/2021</p>
                 </div>
                 <div class="product-store">
-                    <a href="./product.html"><img class="image-product" src="./image/store-product/cat2-product3.jpg" alt=""></a>
-                    <a href="./product.html"><h3 class="name-product">GVN Viper M</h3></a>
+                    <a href="./product.php"><img class="image-product" src="./image/store-product/cat2-product3.jpg" alt=""></a>
+                    <a href="./product.php"><h3 class="name-product">GVN Viper M</h3></a>
                     <p class="price-product"><Strong>Price:</Strong> 19,790,000 VND</p>
                     <p><Strong>Update:</Strong> 06/04/2021</p>
                 </div>
                 <div class="product-store">
-                    <a href="./product.html"><img class="image-product" src="./image/store-product/cat3-product4.jpg" alt=""></a>
-                    <a href="./product.html"><h3 class="name-product">ASUS VA24EHE 24" IPS 75Hz</h3></a>
+                    <a href="./product.php"><img class="image-product" src="./image/store-product/cat3-product4.jpg" alt=""></a>
+                    <a href="./product.php"><h3 class="name-product">ASUS VA24EHE 24" IPS 75Hz</h3></a>
                     <p class="price-product"><Strong>Price:</Strong> 3,100,000 VND</p>
                     <p><Strong>Update:</Strong> 05/04/2021</p>
                 </div>
                 <div class="product-store">
-                    <a href="./product.html"><img class="image-product" src="./image/store-product/cat1-product3.png" alt=""></a>
-                    <a href="./product.html"><h3 class="name-product">Laptop ASUS TUF Gaming F15 FX506LH HN002T</h3></a>
+                    <a href="./product.php"><img class="image-product" src="./image/store-product/cat1-product3.png" alt=""></a>
+                    <a href="./product.php"><h3 class="name-product">Laptop ASUS TUF Gaming F15 FX506LH HN002T</h3></a>
                     <p class="price-product"><Strong>Price:</Strong> 19,490,000 VND</p>
                     <p><Strong>Update:</Strong> 01/04/2021</p>
                 </div>
                 <div class="product-store">
-                    <a href="./product.html"><img class="image-product" src="./image/store-product/cat3-product1.jpg" alt=""></a>
-                    <a href="./product.html"><h3 class="name-product">ACER ED272 A 27" IPS 75Hz</h3></a>
+                    <a href="./product.php"><img class="image-product" src="./image/store-product/cat3-product1.jpg" alt=""></a>
+                    <a href="./product.php"><h3 class="name-product">ACER ED272 A 27" IPS 75Hz</h3></a>
                     <p class="price-product"><Strong>Price:</Strong> 4,090,000 VND</p>
                     <p><Strong>Update:</Strong> 31/03/2021</p>
                 </div>
                 <div class="product-store">
-                    <a href="./product.html"><img class="image-product" src="../image/store-product/cat5-product4.jpg" alt=""></a>
-                    <a href="./product.html"><h3 class="name-product">Sony Playstation 5 Standard Edition</h3></a>
+                    <a href="./product.php"><img class="image-product" src="../image/store-product/cat5-product4.jpg" alt=""></a>
+                    <a href="./product.php"><h3 class="name-product">Sony Playstation 5 Standard Edition</h3></a>
                     <p class="price-product"><Strong>Price:</Strong> 17,000,000 VND</p>
                     <p><Strong>Update:</Strong> 30/03/2021</p>
                 </div>
                 <div class="product-store">
-                    <a href="./product.html"><img class="image-product" src="./image/store-product/cat3-product2.jpg" alt=""></a>
-                    <a href="./product.html"><h3 class="name-product">ViewSonic VX2458-P 24" 144Hz FreeSync</h3></a>
+                    <a href="./product.php"><img class="image-product" src="./image/store-product/cat3-product2.jpg" alt=""></a>
+                    <a href="./product.php"><h3 class="name-product">ViewSonic VX2458-P 24" 144Hz FreeSync</h3></a>
                     <p class="price-product"><Strong>Price:</Strong> 3,990,000 VND</p>
                     <p><Strong>Update:</Strong> 30/01/2021</p>
                 </div>
                 <div class="product-store">
-                    <a href="./product.html"><img class="image-product" src="./image/store-product/cat1-product2.png" alt=""></a>
-                    <a href="./product.html"><h3 class="name-product">Laptop gaming Acer Nitro 5 AN515 44 R9JM</h3></a>
+                    <a href="./product.php"><img class="image-product" src="./image/store-product/cat1-product2.png" alt=""></a>
+                    <a href="./product.php"><h3 class="name-product">Laptop gaming Acer Nitro 5 AN515 44 R9JM</h3></a>
                     <p class="price-product"><Strong>Price:</Strong> 18,790,000 VND</p>
                     <p><Strong>Update:</Strong> 25/03/2021</p>
                 </div>
                 <div class="product-store">
-                    <a href="./product.html"><img class="image-product" src="./image/store-product/cat4-product1.jpg" alt=""></a>
-                    <a href="./product.html"><h3 class="name-product"> Gaming DareU LK145 USB</h3></a>
+                    <a href="./product.php"><img class="image-product" src="./image/store-product/cat4-product1.jpg" alt=""></a>
+                    <a href="./product.php"><h3 class="name-product"> Gaming DareU LK145 USB</h3></a>
                     <p class="price-product"><Strong>Price:</Strong> 340,000 VND</p>
                     <p><Strong>Update:</Strong> 12/03/2021</p>
                 </div>
                 <div class="product-store">
-                    <a href="./product.html"><img class="image-product" src="./image/store-product/cat5-product3.png" alt=""></a>
-                    <a href="./product.html"><h3 class="name-product">Sony Playstation 4 Pro 1TB - OM 2</h3></a>
+                    <a href="./product.php"><img class="image-product" src="./image/store-product/cat5-product3.png" alt=""></a>
+                    <a href="./product.php"><h3 class="name-product">Sony Playstation 4 Pro 1TB - OM 2</h3></a>
                     <p class="price-product"><Strong>Price:</Strong> 11,490,000 VND</p>
                     <p><Strong>Update:</Strong> 01/03/2021</p>
                 </div>
                 <div class="product-store">
-                    <a href="./product.html"><img class="image-product" src="./image/store-product/cat2-product2.jpg" alt=""></a>
-                    <a href="./product.html"><h3 class="name-product">GVN Mystic M</h3></a>
+                    <a href="./product.php"><img class="image-product" src="./image/store-product/cat2-product2.jpg" alt=""></a>
+                    <a href="./product.php"><h3 class="name-product">GVN Mystic M</h3></a>
                     <p class="price-product"><Strong>Price:</Strong> Contacts</p>
                     <p><Strong>Update:</Strong> 01/03/2021</p>
                 </div>
                 <div class="product-store">
-                    <a href="./product.html"><img class="image-product" src="./image/store-product/cat3-product3.jpg" alt=""></a>
-                    <a href="./product.html"><h3 class="name-product">LG 24MP59G-P 24" IPS 75Hz Freesync</h3></a>
+                    <a href="./product.php"><img class="image-product" src="./image/store-product/cat3-product3.jpg" alt=""></a>
+                    <a href="./product.php"><h3 class="name-product">LG 24MP59G-P 24" IPS 75Hz Freesync</h3></a>
                     <p class="price-product"><Strong>Price:</Strong> 3,290,000 VND</p>
                     <p><Strong>Update:</Strong> 28/02/2021</p>
                 </div>
                 <div class="product-store">
-                    <a href="./product.html"><img class="image-product" src="./image/store-product/cat4-product3.jpg" alt=""></a>
-                    <a href="./product.html"><h3 class="name-product">Rapoo V500 Alloy</h3></a>
+                    <a href="./product.php"><img class="image-product" src="./image/store-product/cat4-product3.jpg" alt=""></a>
+                    <a href="./product.php"><h3 class="name-product">Rapoo V500 Alloy</h3></a>
                     <p class="price-product"><Strong>Price:</Strong> 450,000 VND</p>
                     <p><Strong>Update:</Strong> 28/02/2021</p>
                 </div>
                 <div class="product-store">
-                    <a href="./product.html"><img class="image-product" src="./image/store-product/cat5-product2.jpg" alt=""></a>
-                    <a href="./product.html"><h3 class="name-product">Sony PlayStation Classic - Limited</h3></a>
+                    <a href="./product.php"><img class="image-product" src="./image/store-product/cat5-product2.jpg" alt=""></a>
+                    <a href="./product.php"><h3 class="name-product">Sony PlayStation Classic - Limited</h3></a>
                     <p class="price-product"><Strong>Price:</Strong> 2,800,000 VND</p>
                     <p><Strong>Update:</Strong> 25/02/2021</p>
                 </div>
@@ -201,9 +201,9 @@
         <!--START WITH FOOTER-->
     <footer>
         <nav class="bot-nav">
-                <section><a href="../privacy.html">Privacy Policy</a></section>
-                <section><a href="../tos.html">Terms of Service</a></section>
-                <section><a href="../copyright.html">Copyright</a></section>
+                <section><a href="../privacy.php">Privacy Policy</a></section>
+                <section><a href="../tos.php">Terms of Service</a></section>
+                <section><a href="../copyright.php">Copyright</a></section>
         </nav>
     </footer>
     <div id="consentPopup" class="hidden">

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fees</title>
+    <link rel="stylesheet" href="navigation.css" type="text/css"/>
+    <link rel="stylesheet" href="./Assist/fee.css" type="text/css"/>
+    <link rel="stylesheet" href="./Assist/icon.css" type="text/css"/>
+    <link rel="stylesheet" href="./Assist/app.css" type="text/css">
+</head>
+
+<body onpageshow="popup()">
+<header>
+    <div class="logo-home">
+        <a href="index.php"><img src="./image/mall-logo.jpg" alt="shopping cart creative"></a>
+    </div>
+    <div id="topnav">
+    <nav>
+        <ul>
+            <li><a href="order.php">ORDERS</a></li>
+            <li><a href="contacts.php">CONTACTS</a></li>
+            <li><a href="faqs.php">FAQS</a></li>
+            <li class="dropdown">
+                <a class="dropbutton">BROWSE</a>
+                <div class="drop-content">
+                    <a href="browse_name.php">Browse Stores by Names</a>
+                    <a href="browse_cat.php">Browse Stores by Category </a>
+                </div>
+            </li>
+            <li><a onclick="loggedStatus()">MY ACCOUNT</a></li>
+            <li><a class="active" href="fees.php">FEES</a></li>
+            <li><a href="aboutus.php">ABOUT US</a></li>
+            <li><a href="index.php">HOME</a></li>
+        </ul>
+    </nav>
+    </div>
+</header>
+
+<main>
+    <header><h1>FEES</h1></header>
+    <section id="storeowner">
+        <div class="info">
+            <h2>For Store owners: </h2>
+            <h3>Selling fee</h3>
+            <p>For store owners, every time an item sells, you will be charged a certain percentage based on the type of product from that purchase plus a 50 cent maintenence fee</p>
+        </div>
+        <div id="selling_price">
+            <table>
+                <tr>
+                    <th >Type/category of products</th>
+                    <th >Fees</th>
+                    <th >Notes</th>
+                </tr>
+                <tr>
+                    <td class="tablecontent">Most categories, including motors, parts, acessories<br> and engines with capacity under 150CC</td>
+                    <td class="tablecontent">
+                        <ul>
+                            <li>12% on total sale amount upto 500$(apx 10,000,000 VND)</li>
+                            <li>2% on sale under 500$(apx 10,000,000 VND) </li>
+                        </ul>
+                    </td>
+                    <td class="tablecontent">For products whose price needs to be negotiated when<br> contacted, the fee will be 15% of the average price of the products in category</td>
+                </tr>
+                <tr>
+                    <td class="tablecontent">Books, Movies and Musics</td>
+                    <td class="tablecontent">
+                        <ul>
+                            <li>15% of total amount of sale upto 50$(apx 1,000,000 VND)</li>
+                            <li>6% of total sale over 50$(apx 1,000,000 VND)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tablecontent">Computers, electronics and it's components</td>
+                    <td class="tablecontent">
+                        <ul>
+                            <li>12,5% of total sale amount upto 500$(apx 10,000,000 VND)</li>
+                            <li>8% total sale amount over 500$(apx 10,000,000 VND)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tablecontent">Heavy industries's machineries and equipments including<br> engines(over 150CC), metal presses, cranes, Cnc machines, industrial chemicals, ...</td>
+                    <td class="tablecontent">
+                        <ul>
+                            <li>5% of total sale upto 1500$(apx 30,000,000 VND)</li>
+                            <li>2% of items over 1500$(apx 30,000,000 VND)</li>
+                        </ul>
+                    </td>
+                    <td class="tablecontent">For engines with capacity under 150CC, check above</td>
+                </tr>
+            </table>
+        </div>
+        <div class="info">
+            <h3>Sponsorship and ads</h3>
+            <p>For anyone who wants to run advertisements and promotions, as long as the contents aren't controversial, we offer the following ad packs:</p>
+        </div>
+        <div id="adprice">
+            <table>
+                <tr>
+                    <th>Pack's name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td class="tablecontent">Type 1</td>
+                    <td class="tablecontent">This pack lets you put an advertisement which includes an<br> image or a gif which will link back to your store page for 7 days</td>
+                    <td class="tablecontent">5.99$</td>
+                </tr>
+                <tr>
+                    <td class="tablecontent">Type 2</td>
+                    <td class="tablecontent">This pack lets you put an ad-pack of 3 images/gifs which<br> will be randomly picked and placed with a higher priority than tier 1 for 14 days</td>
+                    <td class="tablecontent">11.99$</td>
+                </tr>
+                <tr>
+                    <td class="tablecontent">Type 3</td>
+                    <td class="tablecontent">This pack lets yo put an ad-pack of 7 images/gifs and will<br> be placed with the highest priority for the duration of 18 days</td>
+                    <td class="tablecontent">19.99%</td>
+                </tr>
+                <tr>
+                    <td class="tablecontent">Monthly <br>subcription service:</td>
+                    <td class="tablecontent">This pack lets you put a pack of 5 adds which will be chosen<br> randomly with the same priority as tier 2 for the duration of 1 month(30 days)</td>
+                    <td class="tablecontent">15.99% / month</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="shoppers">
+        <div class="info">
+            <h2>For shoppers: </h2>
+            <h3>Membership</h3>
+            <p>To enhance shopping experience, we offer an optional premium membership service which includes:</p>
+        </div>
+        <div id="content">
+            <ul>
+                <li>ad-block functions</li>
+                <li>30-minutes delivery within 4km(~ 2.5 miles) from the shop (or from the nearest available logistic center)</li>
+                <li>reduces delivery cost by 15%</li>
+                <li>priority in auctions</li>
+            </ul>
+            <p id="premium_price">For the price of <strong>6.99$</strong> a month</p>
+        </div>
+
+    </section>
+</main>
+
+<footer>
+    <div id="botnav">
+        <nav>
+            <ul>
+                <li><a href="privacy.php">Privacy Policy</a></li>
+                <li><a href="tos.php">Terms of Service</a></li>
+                <li><a href="copyright.php">Copyright</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+<div id="consentPopup" class="hidden">
+    <p>This site uses cookies to improve the user experience. By clicking
+        here you accept cookies placed by our site.</p> <a id="accept" href="#">Learn More</a>
+    <button onclick="consent()">I Consent</button>
+</div>
+</body>
+</html>
+<script src="./Assist/app.js"></script>
