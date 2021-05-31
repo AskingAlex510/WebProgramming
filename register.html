@@ -43,7 +43,7 @@
     </header>
     <p>Create your account here!</p>
     <section>
-    <form id="register">
+    <form id="register" method='post' action="register.php">
         <label for="mail">E-Mail Address:</label><br>
         <input type="email" id="mail" name="mail"><br>
         <label for="phone">Phone Number:</label><br>
@@ -55,9 +55,9 @@
         <label for="pic">Upload a Profile Picture:</label><br>
         <input type="file" id="pic" name="pic"><br>
         <label for="name_first">First Name:</label><br>
-        <input type="text" id="name_first" name="name"><br>
+        <input type="text" id="name_first" name="name_first"><br>
         <label for="name_last">Last Name Name:</label><br>
-        <input type="text" id="name_last" name="name"><br>
+        <input type="text" id="name_last" name="name_last"><br>
         <label for="address">Address:</label><br>
         <input type="text" id="address" name="address"><br>
         <label for="city">City:</label><br>
@@ -340,3 +340,35 @@
 </html>
 <script src="app.js"></script>
 <script src="./Assist/register.js"></script>
+
+<?php
+	//start input form elements
+	
+	//suppress error reporting 
+	error_reporting(E_ERROR | E_PARSE);
+	
+	//take input and create array
+	$keys = array("mail", "phone", "pswd", "name_first", "name_last", "address", "city", "zip", "country");
+	
+	//change array reference to csv_line
+	$csv_line = $keys;
+	// for each item ($key) in the array
+	foreach($keys as $key){
+		//push the posted value of each key into the end of the array
+		array_push($csv_line,'' . $_POST[$key]);
+	}
+	// declare the .csv
+	$fname = 'user.csv';
+	//set up implode array to comma seperated single-element
+	$csv_line = implode(',',$csv_line);
+	//if the csv file does not exist, set indicator to the beginning of a new line
+	$csv_line = $csv_line . "\r\n"  ;
+	//define open file and append
+	$fcon = fopen($fname, 'a');
+	//define content as above
+	$fcontent = $csv_line;
+	//append content
+	fwrite($fcon,$csv_line);
+	//close
+	fclose($fcon);
+?>

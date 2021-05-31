@@ -42,7 +42,7 @@
         <h1>LOG IN</h1>
     </header>
     <section>
-        <form id="login" action="account.html">
+        <form id="login" action="login.php">
             <label for="mail">E-Mail:</label><br>
             <input type="email" id="mail"><br>
             <label for="pswd">Password:</label><br>
@@ -75,3 +75,54 @@
 </html>
 <script src="./Assist/app.js"></script>
 <script src="./Assist/login.js"></script>
+
+<?php
+    //session_start();
+    //if (isset($_POST['act'])) {
+        //if(isset($_POST['password']) && $_POST['password'] == 'p4ssw0rd') {
+            //$_SESSION['loggedin'] = true;
+          //  header('locate: add_product.php');
+        //} else {
+        //    $error = 'Invalid username/password';
+      //  }
+    //}
+    //if (isset($error)){
+      //  echo '<p>$error</p>';
+    //}
+
+//suppress error reporting 
+	error_reporting(E_ERROR | E_PARSE);
+
+// take user input as array
+$email = $_POST['mail'];
+$password = $_POST['pswd'];
+$creds = array('mail' => $_POST['mail'],
+		  'pswd' => $_POST['pswd']
+		  );
+//check credentials against list  
+$check = function($email, $password) use ($creds) {
+	foreach($creds as $cred)
+		if($cred[10] == $email && $cred[12] == $password)
+		echo ("User Exists");	
+		return true;
+	
+	echo ("User does not exist");
+	return false;
+	};
+
+$check($email, $password);
+
+
+// get list of registered users as array
+function get_creds($file) {
+	$path = fopen($file, 'r');
+	while ($line = fgetcsv($path)) {
+		$lines[] = $line;
+	}
+	fclose($path);
+	
+	return $lines;
+}
+
+$creds = get_creds('user.csv')
+?>
