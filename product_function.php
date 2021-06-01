@@ -1,7 +1,7 @@
 <?php
 
 function read_all_products() {
-  $file_name = 'products.csv';
+  $file_name = 'data/products.csv';
   $fp = fopen($file_name, 'r');
   $first = fgetcsv($fp);
   $products = [];
