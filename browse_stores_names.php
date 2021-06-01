@@ -2,18 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Thank You</title>
+    <title>Browse page</title>
     <link rel="stylesheet" href="navigation.css" type="text/css"/>
+    <link rel="stylesheet" href="./Assist/browse_store_names.css" type="text/css"/>
     <link rel="stylesheet" href="./Assist/icon.css" type="text/css"/>
-    <link rel="stylesheet" href="./Assist/Thankyou.css" type="text/css"/>
     <link rel="stylesheet" href="./Assist/app.css" type="text/css">
 </head>
 
-<body>
-
+<body onpageshow="popup()">
 <header>
     <div class="logo-home">
-        <a href="./index.html"><img src="./image/mall-logo.jpg" alt="shopping cart creative"></a>
+        <a href="index.html"><img src="./image/mall-logo.jpg" alt="shopping cart creative"></a>
     </div>
     <div id="topnav">
     <nav>
@@ -25,7 +24,7 @@
                 <a class="dropbutton">BROWSE</a>
                 <div class="drop-content">
                     <a href="browse_name.php">Browse Stores by Names</a>
-                    <a href="browse_cat.php" class="active">Browse Stores by Category </a>
+                    <a href="browse_cat.php">Browse Stores by Category </a>
                 </div>
             </li>
             <li><a onclick="loggedStatus()">MY ACCOUNT</a></li>
@@ -38,8 +37,17 @@
 </header>
 
 <main>
-    <br><h1>THANK YOU FOR YOUR PURCHASE</h1><br>
-    <h3>Press <button><a href="index.html"><strong>this button</strong></a></button> To go back to homepage</h3>
+    <header>
+        <h2>Search results:</h2>
+    </header>
+    <div class=store1>
+        <a class="storelink" href="newstore1.html"><img class="imgstore" src="image\logo-store1.jpg" alt="computer tech's logo"></a>
+        <a class="storelink" href="newstore1.html"><p class="storename">Computer tech</p></a>
+    </div>
+    <div class=store1>
+        <a class="storelink" href="newstore1.html"><img class="imgstore" src="image/logo-store4.png" alt="computer tech's logo"></a>
+        <a class="storelink" href="newstore1.html"><p class="storename">RIC</p></a>
+    </div>
 </main>
 
 <footer>
@@ -53,5 +61,11 @@
         </nav>
     </div>
 </footer>
+<div id="consentPopup" class="hidden">
+    <p>This site uses cookies to improve the user experience. By clicking
+        here you accept cookies placed by our site.</p> <a id="accept" href="#">Learn More</a>
+    <button onclick="consent()">I Consent</button>
+</div>
 </body>
 </html>
+<script src="./Assist/app.js"></script>

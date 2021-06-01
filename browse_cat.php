@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Thank You</title>
+    <title>Browse by category</title>
     <link rel="stylesheet" href="navigation.css" type="text/css"/>
+    <link rel="stylesheet" href="./Assist/browse_cat.css" type="text/css"/>
     <link rel="stylesheet" href="./Assist/icon.css" type="text/css"/>
-    <link rel="stylesheet" href="./Assist/Thankyou.css" type="text/css"/>
     <link rel="stylesheet" href="./Assist/app.css" type="text/css">
 </head>
 
-<body>
+<body onpageshow="popup()">
 
 <header>
     <div class="logo-home">
-        <a href="./index.html"><img src="./image/mall-logo.jpg" alt="shopping cart creative"></a>
+        <a href="index.html"><img src="./image/mall-logo.jpg" alt="shopping cart creative"></a>
     </div>
     <div id="topnav">
     <nav>
@@ -38,8 +38,20 @@
 </header>
 
 <main>
-    <br><h1>THANK YOU FOR YOUR PURCHASE</h1><br>
-    <h3>Press <button><a href="index.html"><strong>this button</strong></a></button> To go back to homepage</h3>
+    <header>
+        <h1>SEARCH BASED ON CATEGORY</h1>
+    </header>
+    <div class=selector>
+        <label for="category">Choose a Category:</label>
+        <select name="category" id= category>
+            <option value="Laptop">Laptop Gaming</option>
+            <option value="PC gaming">PC Gaming</option>
+            <option value="monitor">Monitor</option>
+            <option value="keyboard">Keyboard</option>
+            <option value="console">Console</option>
+        </select>
+    <button type="button"><a href="browse_stores_names.php">Search</a></button>
+    </div>
 </main>
 
 <footer>
@@ -53,5 +65,11 @@
         </nav>
     </div>
 </footer>
+<div id="consentPopup" class="hidden">
+    <p>This site uses cookies to improve the user experience. By clicking
+        here you accept cookies placed by our site.</p> <a id="accept" href="#">Learn More</a>
+    <button onclick="consent()">I Consent</button>
+</div>
 </body>
 </html>
+<script src="./Assist/app.js"></script>

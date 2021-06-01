@@ -24,8 +24,8 @@
             <li class="dropdown">
                 <a class="dropbutton">BROWSE</a>
                 <div class="drop-content">
-                    <a href="browse_name.html">Browse Stores by Names</a>
-                    <a href="browse_cat.html">Browse Stores by Category </a>
+                    <a href="browse_name.php">Browse Stores by Names</a>
+                    <a href="browse_cat.php">Browse Stores by Category </a>
                 </div>
             </li>
             <li><a href="login.html">MY ACCOUNT</a></li>
