@@ -24,8 +24,8 @@
             <li class="dropdown">
                 <a class="dropbutton">BROWSE</a>
                 <div class="drop-content">
-                    <a href="browse_name.html">Browse Stores by Names</a>
-                    <a href="browse_cat.html" class="active">Browse Stores by Category </a>
+                    <a href="browse_name.php">Browse Stores by Names</a>
+                    <a href="browse_cat.php" class="active">Browse Stores by Category </a>
                 </div>
             </li>
             <li><a onclick="loggedStatus()">MY ACCOUNT</a></li>
@@ -37,20 +37,34 @@
     </div>
 </header>
 
+<?php
+    include 'browse_stores_names.php';
+
+    function store_category($p1, $p2) {
+        return strcmp('Laptop', 'Laptop')
+    }
+
+    $mapping = [
+        'Laptop' => 'store_category',
+    ]
+
+    $selected_func = 'store_category';
+?>
+
 <main>
     <header>
         <h1>SEARCH BASED ON CATEGORY</h1>
     </header>
     <div class=selector>
         <label for="category">Choose a Category:</label>
-        <select name="category" id= category>
+        <select name="category" id="category">
             <option value="Laptop">Laptop Gaming</option>
             <option value="PC gaming">PC Gaming</option>
             <option value="monitor">Monitor</option>
             <option value="keyboard">Keyboard</option>
             <option value="console">Console</option>
         </select>
-    <button type="button"><a href="browse_stores_names.html">Search</a></button>
+    <button type="button"><a href="browse_stores_names.php">Search</a></button>
     </div>
 </main>
 
