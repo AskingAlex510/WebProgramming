@@ -109,7 +109,7 @@
 
 //suppress error reporting 
 	error_reporting(E_ERROR | E_PARSE);
-
+<?php
 // take user input as array
 $email = $_POST['mail'];
 $password = $_POST['pswd'];
@@ -142,4 +142,54 @@ function get_creds($file) {
 }
 
 $creds = get_creds('user.csv')
+?>
+function read_all_users() {
+  $file_name = 'user.csv';
+  $fp = fopen($file_name, 'r');
+  $first = fgetcsv($fp);
+  $users = [];
+  while ($row = fgetcsv($fp)) {
+    $i = 0;
+    $user = [];
+    foreach ($first as $col_name) {
+      $user[$col_name] =  $row[$i];
+      $i++;
+    }
+    $users[] = $user;
+  }
+  return $products;
+}
+
+function get_email($email) {
+  $users = read_all_users();
+  foreach ($users as $u) {
+    if ($u['10'] == $email) {
+      return true;
+    }
+  }
+  return false;
+}
+
+function get_password($password) {
+  $users = read_all_users();
+  foreach ($users as $u) {
+    if ($u['12'] == $password) {
+      return true;
+    }
+  }
+  return false;
+}
+
+$logged_in = false;
+session_start();
+
+$email = $_SESSION['mail'];
+$password = $_SESSION['pswd'];
+
+if(get_email($email) && get_password($password)){
+	$logged_in = true;
+	header('location: account.html');
+} else {
+	echo('Failed');
+}
 ?>
