@@ -1,38 +1,9 @@
-<!DOCTYPE html>
 <?php
-//save changed text contents as cookie.
-// if(isset($_POST["submit-cpy"])) {
-//     $cookie_cpy="copyright";
-//     $cookie_cpy_value= $_POST["text-input-copyright"];
-//     setcookie($cookie_cpy, $cookie_cpy_value, time()+(60*60*24*7), "/");
-// }
-
-// if(isset($_POST["submit-tos"])) {
-//     $cookie_tos="TOS";
-//     $cookie_tos_value= $_POST["text-input-tos"];
-//     setcookie($cookie_tos, $cookie_tos_value, time()+(60*60*24*7), "/");
-// }
-
-// if(isset($_POST["submit-privacy"])) {
-//     $cookie_privacy="privacy";
-//     $cookie_privacy_value= $_POST["text-input-privacy"];
-//     setcookie($cookie_privacy, $cookie_privacy_value, time()+(60*60*24*7), "/");
-// }
-
-// loggedin for the admin.
-// if (isset($_POST['act'])){
-
-//     if (isset($_POST['password']) && $_POST['password'] == 'password') {
-//         $_SESSION['loggedin'] = true;
-//         header('location: product.php');
-// }   else {
-//     $error = "invalid credentials";
-//     }
-// }
-
-// if (isset($error)){
-//     echo "<p>$error</p>";
-// }
+//loggin as admin:
+session_start();
+if(!isset($_SESSION["log_status"])) {
+    header("location: login.php");
+}
 ?>
 <html>
 <head>

@@ -1,4 +1,21 @@
-<!DOCTYPE html>
+<?php
+    //confirmation of login as admin
+    session_start();
+    if (isset($_POST["login"])) {
+        //chechs whether the text file exists, if exists then extract the hash
+        //and compare to the password
+        if (file_exists("ac.txt")) {
+            $log_file= fopen("ac.txt", "r");
+            $log_info= fread($log_file, filesize("ac.txt"));
+            $verify= password_verify($_POST["password"], $log_info);
+            if (isset($_POST["password"]) && $verify ) {
+                $_SESSION["log_status"] = true;
+                header("location: cms.php");
+            }
+            fclose("ac.txt");
+        }
+    }
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -46,9 +63,9 @@
             <label for="mail">E-Mail:</label><br>
             <input type="email" id="mail"><br>
             <label for="pswd">Password:</label><br>
-            <input type="password" id="pswd"><br>
+            <input type="password" name="password" id="pswd"><br>
             <button type="reset" form="login" value="reset" >Clear</button>
-            <button type="Submit" form="login" value="submit" onclick="login()">Submit</button><br>
+            <button type="Submit" name="login" form="login" value="submit" onclick="login()">Submit</button><br>
             <a href="forgot.html">Forgot Password</a><br>
             <a href="register.html">Register</a><br>
         </form>
