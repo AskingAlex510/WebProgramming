@@ -1,7 +1,7 @@
 <?php
 
 function read_all_stores() {
-  $file_name = 'stores.csv';
+  $file_name = 'data/stores.csv';
   $fss = fopen($file_name, 'r');
   $first = fgetcsv($fss);
   $stores = [];
