@@ -1,3 +1,6 @@
+<?php
+$id = $_GET['store'];//Get URL id
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,17 +33,20 @@
                 <a href="index.php">Home Page</a>
             </div>
             <div class="nav-button">
-                <a href="./aboutus.html">About Us</a>
+                <a href="./aboutus.php">About Us</a>
             </div>
             <div class="nav-button">
-                <a href="./contacts.html">Contacts Us</a>
+                <a href="./contacts.php">Contacts Us</a>
             </div>
             <div class="dropdown-menu">
-                <a class="nav-button" href="#">Product</a>
+                <?php
+                    echo"<a class='nav-button' href='#?store=$id'>";
+                    echo'Product</a>';
+                ?>
                 <div class="dropdown-content">
                     <a href="#">Browse Products by Category</a>
                     <div class="category-product">
-                            <a href="./pro1_laptop_gaming.html">Laptop Gaming</a>
+                            <a href="./pro1_laptop_gaming.php">Laptop Gaming</a>
                             <a href="./pro2_pc_gaming.php">PC Gaming</a>
                             <a href="./pro3_monitors.php">Monitors</a>
                             <a href="./pro4_keyboard.php">Keyboard</a>
@@ -50,8 +56,12 @@
                 <div class="category-time">
                     <a  href="#">Browse Products by Created Time</a>
                     <div class="category-product-time">
-                        <a href="./pro_new.php">Newest First</a>
-                        <a href="./pro_old.php">Oldest First</a>
+                        <?php
+                            echo"<a href='./pro_new.php?store=$id'>";
+                            echo'Newest First</a>';
+                            echo"<a href='./pro_old.php?store=$id'>";
+                            echo'Oldest First</a>';
+                        ?>
                     </div>
                 </div>
             </div>
@@ -76,8 +86,6 @@
             <?php
             session_start();
             require 'product_functions.php';
-
-            $id = $_GET['store'];//Get URL id
 
             $product = read_all_products();
             $check = 0;//Element use to change the picture
@@ -173,9 +181,9 @@
         <!--START WITH FOOTER-->
     <footer>
         <nav class="bot-nav">
-                <section><a href="privacy.html">Privacy Policy</a></section>
-                <section><a href="tos.html">Terms of Service</a></section>
-                <section><a href="copyright.html">Copyright</a></section>
+                <section><a href="privacy.php">Privacy Policy</a></section>
+                <section><a href="tos.php">Terms of Service</a></section>
+                <section><a href="copyright.php">Copyright</a></section>
         </nav>
     </footer>
     <div id="consentPopup" class="hidden">
