@@ -26,7 +26,7 @@ GitHub URL - https://github.com/AskingAlex510/WebProgramming
 
 UPDATED GROUP CONTRIBUTION FOR FULL-STACK ASSIGNMENT
 
-Shaw: PHP01, PHP04, PHP05 (Total Rubric Points: 7)
-Nhi: DNF (Total Rubric Points: 0)
-Duc: PHP03 (Total Rubric Points: 2)
-Quang: PHP02, PHP07 (Total Rubric Points: 7)
+Shaw: PHP01, PHP04, PHP05 
+Nhi: 
+Duc: PHP03
+Quang: PHP02, PHP07 
