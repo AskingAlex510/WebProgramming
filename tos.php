@@ -12,25 +12,25 @@
 <body onpageshow="popup()">
 <header>
     <div class="logo-home">
-        <a href="index.html"><img src="./image/mall-logo.jpg" alt="shopping cart creative"></a>
+        <a href="index.php"><img src="./image/mall-logo.jpg" alt="shopping cart creative"></a>
     </div>
     <div id="topnav">
     <nav>
         <ul>
-            <li><a href="order.html">ORDERS</a></li>
-            <li><a href="contacts.html">CONTACTS</a></li>
-            <li><a href="faqs.html">FAQS</a></li>
+            <li><a href="order.php">ORDERS</a></li>
+            <li><a href="contacts.php">CONTACTS</a></li>
+            <li><a href="faqs.php">FAQS</a></li>
             <li class="dropdown">
                 <a class="dropbutton">BROWSE</a>
                 <div class="drop-content">
-                    <a href="browse_name.html">Browse Stores by Names</a>
-                    <a href="browse_cat.html">Browse Stores by Category </a>
+                    <a href="browse_name.php">Browse Stores by Names</a>
+                    <a href="browse_cat.php">Browse Stores by Category </a>
                 </div>
             </li>
             <li><a onclick="loggedStatus()">MY ACCOUNT</a></li>
-            <li><a href="fees.html">FEES</a></li>
-            <li><a href="aboutus.html">ABOUT US</a></li>
-            <li><a href="index.html">HOME</a></li>
+            <li><a href="fees.php">FEES</a></li>
+            <li><a href="aboutus.php">ABOUT US</a></li>
+            <li><a href="index.php">HOME</a></li>
         </ul>
     </nav>
     </div>
@@ -49,9 +49,9 @@
     <div id="botnav">
         <nav>
             <ul>
-                <li><a href="privacy.html">Privacy Policy</a></li>
-                <li><a href="tos.html">Terms of Service</a></li>
-                <li><a href="copyright.html">Copyright</a></li>
+                <li><a href="privacy.php">Privacy Policy</a></li>
+                <li><a href="tos.php">Terms of Service</a></li>
+                <li><a href="copyright.php">Copyright</a></li>
             </ul>
         </nav>
     </div>

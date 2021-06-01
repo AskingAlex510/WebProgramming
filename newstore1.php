@@ -1,3 +1,6 @@
+<?php
+$id = $_GET['store'];//Get URL id
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +39,10 @@
                 <a href="./contacts.php">Contacts Us</a>
             </div>
             <div class="dropdown-menu">
-                <a class="nav-button" href="#">Product</a>
+                <?php
+                    echo"<a class='nav-button' href='#?store=$id'>";
+                    echo'Product</a>';
+                ?>
                 <div class="dropdown-content">
                     <a href="#">Browse Products by Category</a>
                     <div class="category-product">
@@ -50,8 +56,12 @@
                 <div class="category-time">
                     <a  href="#">Browse Products by Created Time</a>
                     <div class="category-product-time">
-                        <a href="./pro_new.php">Newest First</a>
-                        <a href="./pro_old.php">Oldest First</a>
+                        <?php
+                            echo"<a href='./pro_new.php?store=$id'>";
+                            echo'Newest First</a>';
+                            echo"<a href='./pro_old.php?store=$id'>";
+                            echo'Oldest First</a>';
+                        ?>
                     </div>
                 </div>
             </div>
@@ -76,8 +86,6 @@
             <?php
             session_start();
             require 'product_functions.php';
-
-            $id = $_GET['store'];//Get URL id
 
             $product = read_all_products();
             $check = 0;//Element use to change the picture
