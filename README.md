@@ -26,7 +26,7 @@ GitHub URL - https://github.com/AskingAlex510/WebProgramming
 
 UPDATED GROUP CONTRIBUTION FOR FULL-STACK ASSIGNMENT
 
-Shaw: PHP01, PHP04, PHP05 
-Nhi: 
-Duc: PHP03, PHP09
-Quang: PHP02, PHP07 
+Shaw: PHP01, PHP04, PHP05 <br /> 
+Nhi: PHP06 <br /> 
+Duc: PHP03, PHP09 <br /> 
+Quang: PHP02, PHP07 <br />  
