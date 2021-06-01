@@ -68,7 +68,7 @@
                 echo'<li><h3> Detailed evaluation : </h3></li>';
                 echo'<ol>';
                     echo'<li><h4>BEST LAPTOP GAMING COMPLEX</h4></li>';
-                    echo"<p>Acer Aspire 7 2020 A715 42G R4ST with integrated NVIDIA GTX1650 4 GB GDDR6 graphics card launched in 2020, is the best gaming laptop in the segment. Not only that, this version also brings a new neat and sexy design. Aspire 7 2020 is equipped with the most powerful cooling system in the segment, inheriting technology from Acer's more advanced models, with top-notch configuration, allowing users to play games while working at any time.</p>";
+                    echo"<p>Acer Aspire 7 2020 A715 42G R4ST with integrated NVIDIA GTX1650 4 GB GDDR6 graphics card launched in 2020, is the best gaming laptop in the segment. Not only that, this version also brings a new neat and sexy design. Aspire 7 2020 is equipped with the most powerful cooling system in the segment, inheriting technology from Acer's more advanced models, with top-notch configuration, allowing users to play games while working at any time.</p>";
                     echo'<li><h4>ULTIMATE GAME EXPERIENCE DESIGN</h4></li>';
                     echo'<p>The system of two radiator fans, 3 full-size copper pipes, and a large-size heatsink helps the Acer Aspire 7 A715 2020 optimize the heat dissipation capacity. The solid design hinge is less shaking when playing, capable of opening 180 degrees to better protect the machine.</p>';
                     echo'<li><h4>3S1 WARRANTY SERVICES</h4></li>';
