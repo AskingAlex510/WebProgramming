@@ -54,18 +54,15 @@
             <h4>Alexander Joseph Shaw</h4>
             <input type="file" name="alex_profile_image">
             <input type="submit" name="alex-ava" value="Upload">
-        </form>
-        <form enctype="multipart/form-data" method="post" action="aboutus.php">
+
             <h4>La Uyen Nhi</h4>
             <input type="file" name="nhi-profile_image">
             <input type="submit" name="nhi-ava" value="Upload">
-        </form>
-        <form enctype="multipart/form-data" method="post" action="aboutus.php">
+
             <h4>Tran Hau Duc</h4>
             <input type="file" name="duc-profile_image">
             <input type="submit" name="duc-ava" value="Upload">
-        </form>
-        <form enctype="multipart/form-data" method="post" action="aboutus.php">
+
             <h4>Nguyen Nhat Quang</h4>
             <input type="file" name="quang-profile_image">
             <input type="submit" name="quang-ava" value="Upload">
