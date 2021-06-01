@@ -13,25 +13,25 @@
 
 <header>
     <div class="logo-home">
-        <a href="./index.html"><img src="./image/mall-logo.jpg" alt="shopping cart creative"></a>
+        <a href="./index.php"><img src="./image/mall-logo.jpg" alt="shopping cart creative"></a>
     </div>
     <div id="topnav">
     <nav>
         <ul>
-            <li><a class="active" href="order.html">ORDERS</a></li>
-            <li><a href="contacts.html">CONTACTS</a></li>
-            <li><a href="faqs.html">FAQS</a></li>
+            <li><a class="active" href="order.php">ORDERS</a></li>
+            <li><a href="contacts.php">CONTACTS</a></li>
+            <li><a href="faqs.php">FAQS</a></li>
             <li class="dropdown">
                 <a class="dropbutton">BROWSE</a>
                 <div class="drop-content">
-                    <a href="browse_name.html">Browse Stores by Names</a>
-                    <a href="browse_cat.html">Browse Stores by Category </a>
+                    <a href="browse_name.php">Browse Stores by Names</a>
+                    <a href="browse_cat.php">Browse Stores by Category </a>
                 </div>
             </li>
-            <li><a href="account.html">MY ACCOUNT</a></li>
-            <li><a href="fees.html">FEES</a></li>
-            <li><a href="aboutus.html">ABOUT US</a></li>
-            <li><a href="index.html">HOME</a></li>
+            <li><a href="account.php">MY ACCOUNT</a></li>
+            <li><a href="fees.php">FEES</a></li>
+            <li><a href="aboutus.php">ABOUT US</a></li>
+            <li><a href="index.php">HOME</a></li>
         </ul>
     </nav>
     </div>
@@ -63,15 +63,15 @@
     </div>
 </div>
 <!-- Original HTML codes sourced and adapted for educational purposes:
-    https://iframedev.blogspot.com/2020/11/responsive-shopping-cart-in-html-and-css.html -->
+    https://iframedev.blogspot.com/2020/11/responsive-shopping-cart-in-html-and-css.php -->
 </section>
 <!--Add the buttons-->
 <div class="buttons">
     <div id="Continue">
-        <button><a href="product.html">Continue shopping</a></button>
+        <button><a href="product.php">Continue shopping</a></button>
     </div>
     <div id="Order">
-        <button><a href="Thankyou.html">Order</a></button>
+        <button><a href="Thankyou.php">Order</a></button>
     </div>
 </div>
 </body>
@@ -81,9 +81,9 @@
     <div id="botnav">
         <nav>
             <ul>
-                <li><a href="privacy.html">Privacy Policy</a></li>
-                <li><a href="tos.html">Terms of Service</a></li>
-                <li><a href="copyright.html">Copyright</a></li>
+                <li><a href="privacy.php">Privacy Policy</a></li>
+                <li><a href="tos.php">Terms of Service</a></li>
+                <li><a href="copyright.php">Copyright</a></li>
             </ul>
         </nav>
     </div>
