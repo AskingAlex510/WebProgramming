@@ -37,13 +37,27 @@
     </div>
 </header>
 
+<?php
+    include 'browse_stores_names.php';
+
+    function store_category($p1, $p2) {
+        return strcmp('Laptop', 'Laptop')
+    }
+
+    $mapping = [
+        'Laptop' => 'store_category',
+    ]
+
+    $selected_func = 'store_category';
+?>
+
 <main>
     <header>
         <h1>SEARCH BASED ON CATEGORY</h1>
     </header>
     <div class=selector>
         <label for="category">Choose a Category:</label>
-        <select name="category" id= category>
+        <select name="category" id="category">
             <option value="Laptop">Laptop Gaming</option>
             <option value="PC gaming">PC Gaming</option>
             <option value="monitor">Monitor</option>

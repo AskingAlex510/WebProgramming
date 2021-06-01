@@ -41,12 +41,28 @@
         <h2>Search results:</h2>
     </header>
     <div class=store1>
-        <a class="storelink" href="newstore1.html"><img class="imgstore" src="image\logo-store1.jpg" alt="computer tech's logo"></a>
-        <a class="storelink" href="newstore1.html"><p class="storename">Computer tech</p></a>
+        <a href="newstore1.html"><img class="imgstore" src="image\logo-store1.jpg" alt="computer tech's logo"></a>
+        <a href="newstore1.html"><p class="storename">Computer tech</p></a>
     </div>
-    <div class=store1>
-        <a class="storelink" href="newstore1.html"><img class="imgstore" src="image/logo-store4.png" alt="computer tech's logo"></a>
-        <a class="storelink" href="newstore1.html"><p class="storename">RIC</p></a>
+    <div class=store2>
+        <a href="newstore1.html"><img class="imgstore" src="image/logo-store4.png" alt="ric's logo"></a>
+        <a href="newstore1.html"><p class="storename">RIC</p></a>
+    </div>
+    <div class=store3>
+        <a href="newstore1.html"><img class="imgstore" src="image/logo-store2.png" alt="HOUSEhold's logo"></a>
+        <a href="newstore1.html"><p class="storename">HOUSEhold</p></a>
+    </div>
+    <div class=store3>
+        <a href="newstore1.html"><img class="imgstore" src="image/logo-store3.png" alt="richway's logo"></a>
+        <a href="newstore1.html"><p class="storename">Richway</p></a>
+    </div>
+    <div class=store4>
+        <a href="newstore1.html"><img class="imgstore" src="image/logo-store5.png" alt="clothing's logo"></a>
+        <a href="newstore1.html"><p class="storename">Clothing</p></a>
+    </div>
+    <div class=store5>
+        <a href="newstore1.html"><img class="imgstore" src="image/Quality_Store_Logo_g.png" alt="quality store's logo"></a>
+        <a href="newstore1.html"><p class="storename">Quality Store</p></a>
     </div>
 </main>
 
