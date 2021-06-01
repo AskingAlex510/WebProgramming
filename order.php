@@ -8,7 +8,7 @@ if(isset($_POST["order"])) {
         header("location: Thankyou.html");
     }
     else{
-        header("location: register.html");
+        header("location: register.php");
     }
 }
 ?>
