@@ -154,7 +154,9 @@
     <div class="display_auto">
         <div class="display_content" >
         <?php
-
+//suppress error reporting 
+	error_reporting(E_ERROR | E_PARSE);
+            
             $check = 1;//Element use to change the picture
             $count = 0;//Count to create the number of element
 
