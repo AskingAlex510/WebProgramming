@@ -93,7 +93,7 @@
 <script src="./Assist/app.js"></script>
 <script src="./Assist/login.js"></script>
 
-<?php
+//<?php
     //session_start();
     //if (isset($_POST['act'])) {
         //if(isset($_POST['password']) && $_POST['password'] == 'p4ssw0rd') {
@@ -109,40 +109,40 @@
 
 //suppress error reporting 
 	error_reporting(E_ERROR | E_PARSE);
-<?php
+//<?php
 // take user input as array
-$email = $_POST['mail'];
-$password = $_POST['pswd'];
-$creds = array('mail' => $_POST['mail'],
-		  'pswd' => $_POST['pswd']
-		  );
+//$email = $_POST['mail'];
+//$password = $_POST['pswd'];
+//$creds = array('mail' => $_POST['mail'],
+//		  'pswd' => $_POST['pswd']
+//		  );
 //check credentials against list  
-$check = function($email, $password) use ($creds) {
-	foreach($creds as $cred)
-		if($cred[10] == $email && $cred[12] == $password)
-		echo ("User Exists");	
-		return true;
+//$check = function($email, $password) use ($creds) {
+//	foreach($creds as $cred)
+//		if($cred[10] == $email && $cred[12] == $password)
+//		echo ("User Exists");	
+//		return true;
 	
-	echo ("User does not exist");
-	return false;
-	};
+//	echo ("User does not exist");
+//	return false;
+//	};
 
-$check($email, $password);
+//$check($email, $password);
 
 
 // get list of registered users as array
-function get_creds($file) {
-	$path = fopen($file, 'r');
-	while ($line = fgetcsv($path)) {
-		$lines[] = $line;
-	}
-	fclose($path);
-	
-	return $lines;
-}
+//function get_creds($file) {
+//	$path = fopen($file, 'r');
+//	while ($line = fgetcsv($path)) {
+//		$lines[] = $line;
+//	}
+//	fclose($path);
+//	
+//	return $lines;
+//}
 
 $creds = get_creds('user.csv')
-?>
+<?php
 function read_all_users() {
   $file_name = 'user.csv';
   $fp = fopen($file_name, 'r');
