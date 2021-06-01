@@ -48,6 +48,7 @@
     <section>
         <p>
 <?php
+//Display the copyright's contents
     if(!isset($_POST["text-input-copyright"])){
         echo "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus sit architecto illo quae a blanditiis. Earum doloribus aperiam in? In ex optio temporibus id explicabo sed, officia incidunt velit possimus?";
     }

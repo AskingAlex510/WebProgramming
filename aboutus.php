@@ -27,6 +27,8 @@
             move_uploaded_file($_FILES['quang_profile_image']['tmp_name'], $new_location);
         }
     }
+    // Original CSS code sourced and adapted for educational purposes:
+    //     https://github.com/TriDang/cosc2430/blob/main/examples/week11/upload.php
 ?>
 <!DOCTYPE html>
 <html lang="en">
